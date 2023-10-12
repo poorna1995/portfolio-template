@@ -1,4 +1,5 @@
 import productsPageData from "./pages/products";
+import researchData from "./pages/research";
 import whitepapersPageData from "./pages/whitepapers";
 
 export const navigationLinks = [
@@ -35,6 +36,7 @@ export const navigationLinks = [
 		title: "Research",
 		href: "/research",
 		key: "research",
+		pageData: researchData,
 	},
 	{
 		title: "Hobbies",

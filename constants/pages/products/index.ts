@@ -27,8 +27,9 @@ const productsPageData: {
 	heroDescription: string;
 	listData: Array<ListProductCardProps>;
 } = {
-	heroTitle: "",
-	heroDescription: "",
+	heroTitle: "Product Portfolio",
+	heroDescription:
+		"Spearheading the development of diverse end-to-end product portfolios across B2C and B2B domains.",
 	listData: [
 		{
 			title: "Bluecom.ai",

@@ -12,13 +12,14 @@ import calpadData from "../products/calpadData";
 import bluecomCentralData from "../products/bluecomCentralData";
 import stylerData from "../products/stylerData";
 
-const whitepapersPageData: {
+const researchData: {
 	heroTitle: string;
 	heroDescription: string;
 	listData: Array<ListProductCardProps>;
 } = {
-	heroTitle: "Whitpapers",
-	heroDescription: "My Comprehensive list of whitepapers across multiple areas of work.",
+	heroTitle: "My Research Work",
+	heroDescription:
+		"Ventured into multiple areas of AI through a series of intriguing research projects.",
 	listData: [
 		{
 			title: "Bluecom.ai",
@@ -106,4 +107,4 @@ const whitepapersPageData: {
 	],
 };
 
-export default whitepapersPageData;
+export default researchData;

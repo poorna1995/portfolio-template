@@ -10,7 +10,7 @@ export interface ProductCardProps {
 	description: string;
 	link: string;
 	website: string;
-	image: StaticImageData;
+	image?: StaticImageData | string;
 	backgroundColor: string;
 	countTextColor: string;
 	imageStyles?: {};
