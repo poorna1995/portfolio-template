@@ -1,8 +1,6 @@
 import React from "react";
 import OtherItemsCard from "./card";
 
-import React from "react";
-import OtherItemsCard from "./card";
 
 interface CardGridProps {
     title?: string;
