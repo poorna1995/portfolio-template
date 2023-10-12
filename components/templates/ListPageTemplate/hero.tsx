@@ -4,8 +4,8 @@ export default function ListPageHeroComponent({
 	title,
 	description,
 }: {
-	title: string;
-	description: string;
+	title?: string;
+	description?: string;
 }) {
 	return (
 		<div className="bg-black w-full">
