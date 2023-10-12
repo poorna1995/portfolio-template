@@ -12,7 +12,10 @@ export default function ListPageTemplate({ pageType }: { pageType: string }) {
 				title={page?.pageData?.heroTitle}
 				description={page?.pageData?.heroDescription}
 			/>
-			<CardsList data={page?.pageData?.listData || []} />
+			<CardsList
+				data={page?.pageData?.listData || []}
+				pageType={pageType}
+			/>
 		</div>
 	);
 }

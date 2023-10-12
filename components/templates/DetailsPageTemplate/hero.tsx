@@ -1,29 +1,47 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import importedImage from "@/public/assets/whitepapers/ai-and-compute.png";
 import { Button } from "@/components/ui/button";
-export default function DetailsPageHeroComponent() {
+
+
+export default function DetailsPageHeroComponent({
+	title,
+	description,
+	image,
+	imageStyles,
+	buttonTitle,
+}: {
+	title?: string;
+	description?: string;
+	image?: StaticImageData;
+	imageStyles?: {};
+	buttonTitle?: string;
+}) {
 	return (
 		<div className="w-full p-24 bg-black">
 			<div className="flex-1 flex items-center max-w-[1440px] mx-auto">
 				{/* text */}
 				<div className="flex-1">
 					<h1 className="text-6xl text-white mb-8">
-						AI Compute- Technical Deep Dive
+						{title || `AI Compute- Technical Deep Dive`}
 					</h1>
 					<p className="text-3xl text-white mb-8">
-						Explore AI computing hardware and accelerators
+						{description ||
+							`Explore AI computing hardware and accelerators`}
 					</p>
-					<Button>Download Whitepaper</Button>
+					<Button>{buttonTitle || `Download Whitepaper`}</Button>
 				</div>
 				{/* image */}
 				<div className="flex-1">
 					<Image
-						src={importedImage}
+						src={image || importedImage}
 						alt="placeholder"
 						height={600}
 						width={600}
 						className="w-full"
+						style={{
+							...imageStyles,
+						}}
 					/>
 				</div>
 			</div>

@@ -2,8 +2,15 @@
 
 import React from "react";
 import ProductCard, { ProductCardProps } from "./card";
+import { ListProductCardProps } from "@/constants/pages/products";
 
-export default function CardsList({ data }: { data: ProductCardProps[] }) {
+export default function CardsList({
+	data,
+	pageType,
+}: {
+	data: ListProductCardProps[];
+	pageType: string;
+}) {
 	return (
 		<div className="py-8">
 			<div className="max-w-7xl mx-auto my-8">
@@ -14,14 +21,20 @@ export default function CardsList({ data }: { data: ProductCardProps[] }) {
 								key={item.title}
 								className="py-4 px-8 text-2xl rounded-md text-black border  border-[rgba(63, 105, 254, 0.20)] mr-4"
 							>
-								{item.title}{" "}
+								{item.linkTitle}{" "}
 							</span>
 						);
 					})}
 			</div>
 			{Array.isArray(data) &&
 				data.map((item) => {
-					return <ProductCard key={item.title} data={item} />;
+					return (
+						<ProductCard
+							key={item.title}
+							data={item}
+							pageType={pageType}
+						/>
+					);
 				})}
 		</div>
 	);
