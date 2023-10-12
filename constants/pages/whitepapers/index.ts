@@ -1,9 +1,14 @@
 import { ProductCardProps } from "@/components/templates/ListPageTemplate/card";
+import aiWhitepaperData from "./aiWhitepaperData";
+
+interface CustomProductCardProps extends ProductCardProps {
+	detailsPageData: {};
+}
 
 const whitepapersPageData: {
 	heroTitle: string;
 	heroDescription: string;
-	listData: Array<ProductCardProps>;
+	listData: Array<CustomProductCardProps>;
 } = {
 	heroTitle: "",
 	heroDescription: "",
@@ -15,8 +20,9 @@ const whitepapersPageData: {
 			count: 1,
 			countTextColor: "white",
 			image: "",
-			link: "",
+			link: "products/product-1",
 			website: "",
+			detailsPageData: aiWhitepaperData,
 		},
 	],
 };

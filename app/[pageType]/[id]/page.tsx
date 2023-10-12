@@ -2,6 +2,7 @@ import React from "react";
 
 import { Metadata, ResolvingMetadata } from "next";
 import { navigationLinks } from "@/constants/navigation";
+import DetailsPageTemplate from "@/components/templates/DetailsPageTemplate";
 type Props = {
 	params: { pageType: string; id: string };
 	searchParams: { [key: string]: string | string[] | undefined };
@@ -49,9 +50,8 @@ export default function DetailsPage({
 	};
 
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			{pageType},{id}, {page?.title}, {subPage?.title}
-			<h1 className="text-2xl">{title}</h1>
+		<main className="flex min-h-screen  flex-col ">
+			<DetailsPageTemplate pageType={pageType} id={id} />
 		</main>
 	);
 }
