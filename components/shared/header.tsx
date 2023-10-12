@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 export default function Header() {
 	return (
 		<header className="bg-white">
-			<div className="flex justify-items-center justify-between my-4 max-w-6xl mx-auto">
+			<div className="flex justify-items-center justify-between py-4  max-w-6xl mx-auto">
 				<Link href="/" className="text-2xl font-bold">
 					P.
 				</Link>
@@ -21,35 +21,42 @@ export default function Header() {
 	);
 }
 
-const navigationLinks = [
+export const navigationLinks = [
 	{
 		title: "About Me",
 		href: "/about",
+		key: "about",
 	},
 	{
 		title: "Products",
 		href: "/products",
+		key: "products",
 	},
 	{
 		title: "Recognition",
 		href: "/recognition",
+		key: "recognition",
 		subMenu: [
 			{
 				title: "Best Employee Award",
 				href: "/recognition/best-employee-award",
+				key: "best-employee-award",
 			},
 		],
 	},
 	{
 		title: "Whitepapers",
 		href: "/whitepapers",
+		key: "whitepapers",
 	},
 	{
 		title: "Research",
 		href: "/research",
+		key: "research",
 	},
 	{
 		title: "Hobbies",
 		href: "/hobbies",
+		key: "hobbies",
 	},
 ];
