@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { AppNavigation } from "./AppNavigation";
 import { Button } from "../ui/button";
+import { navigationLinks } from "@/constants/navigation";
 
 export default function Header() {
 	return (
@@ -21,42 +22,3 @@ export default function Header() {
 	);
 }
 
-export const navigationLinks = [
-	{
-		title: "About Me",
-		href: "/about",
-		key: "about",
-	},
-	{
-		title: "Products",
-		href: "/products",
-		key: "products",
-	},
-	{
-		title: "Recognition",
-		href: "/recognition",
-		key: "recognition",
-		subMenu: [
-			{
-				title: "Best Employee Award",
-				href: "/recognition/best-employee-award",
-				key: "best-employee-award",
-			},
-		],
-	},
-	{
-		title: "Whitepapers",
-		href: "/whitepapers",
-		key: "whitepapers",
-	},
-	{
-		title: "Research",
-		href: "/research",
-		key: "research",
-	},
-	{
-		title: "Hobbies",
-		href: "/hobbies",
-		key: "hobbies",
-	},
-];

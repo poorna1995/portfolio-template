@@ -1,8 +1,7 @@
 import React from "react";
 
 import { Metadata, ResolvingMetadata } from "next";
-import { navigationLinks } from "@/components/shared/header";
-
+import { navigationLinks } from "@/constants/navigation";
 type Props = {
 	params: { pageType: string; id: string };
 	searchParams: { [key: string]: string | string[] | undefined };

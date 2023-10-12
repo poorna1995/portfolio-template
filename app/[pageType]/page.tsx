@@ -1,7 +1,8 @@
 import React from "react";
 import { Metadata, ResolvingMetadata } from "next";
-import pageTypes from "./constants";
-import { navigationLinks } from "@/components/shared/header";
+import { navigationLinks } from "@/constants/navigation";
+import ListPageTemplate from "@/components/templates/ListPageTemplate";
+
 type Props = {
 	params: { pageType: string };
 	searchParams: { [key: string]: string | string[] | undefined };
@@ -31,8 +32,8 @@ export default function Page({
 	const page = navigationLinks.find((item) => item.key === pageType);
 	if (page)
 		return (
-			<main className="flex min-h-screen flex-col items-center justify-between p-24">
-				<h1 className="text-2xl">{page.title}</h1>
+			<main className="flex min-h-screen flex-col  justify-between ">
+				<ListPageTemplate pageType={pageType} />
 			</main>
 		);
 	return (
