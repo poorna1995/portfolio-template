@@ -1,6 +1,5 @@
-import bluecomImage from "@/public/assets/products/bluecom.png";
-import hivepathImage from "@/public/assets/products/hivepath.png";
-import zelloImage from "@/public/assets/products/zello.png";
+import stylerImage1 from "@/public/assets/products/styler-media-image-1.png";
+import stylerImage2 from "@/public/assets/products/styler-media-image-2.png";
 
 
 const stylerData={
@@ -75,13 +74,10 @@ const stylerData={
 	productMedia: {
 		image: [
 			{
-				src: bluecomImage,
+				src: stylerImage1,
 			},
 			{
-				src: hivepathImage,
-			},
-			{
-				src: zelloImage,
+				src: stylerImage2,
 			},
 		],
 	},

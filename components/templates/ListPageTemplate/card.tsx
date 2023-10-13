@@ -43,29 +43,29 @@ export default function ProductCard({
   return (
     <div className="flex flex-1 items-center max-w-[1440px] mx-auto">
       {/* text column */}
-      <div className="flex-1 ">
-        <div className="px-12">
-          <h3 className="text-5xl">
-            {/* <span
-              className="text-5xl me-2"
-              style={{
-                color: countTextColor,
-              }}
-            >
-              {count}
-            </span> */}
-            {title || "MultiChannel E-Commerce"}
-          </h3>
-          <p className="text-3xl mt-8">
-            {description ||
-              `Centralize and Streamline Your Multi-Channel Business`}
-          </p>
-          <Button
-            className="mt-8 color-#3F69FE "
-            onClick={() => handleViewDetail()}
+      <div className="flex-1 items-center justify-center">
+        <div className="flex px-12">
+          <h1
+            className=" text-5xl mr-8 font-display"
+            style={{
+              color: countTextColor,
+            }}
           >
-            View Detail
-          </Button>
+            {count}
+          </h1>
+          <div>
+            <h3 className="text-5xl font-display">{title || "MultiChannel E-Commerce"}</h3>
+            <p className="text-3xl mt-8 font-default">
+              {description ||
+                `Centralize and Streamline Your Multi-Channel Business`}
+            </p>
+            <Button
+              className="mt-8 color-#3F69FE "
+              onClick={() => handleViewDetail()}
+            >
+              View Detail
+            </Button>
+          </div>
         </div>
       </div>
       {/* image column */}
