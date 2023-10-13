@@ -5,8 +5,8 @@ import whitepapersPageData from "./pages/whitepapers";
 export const navigationLinks = [
 	{
 		title: "About Me",
-		href: "/about",
-		key: "about",
+		href: "/",
+		key: "",
 	},
 	{
 		title: "Products",

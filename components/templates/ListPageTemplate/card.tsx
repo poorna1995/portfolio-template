@@ -41,10 +41,10 @@ export default function ProductCard({
 	};
 
 	return (
-		<div className="flex flex-1 items-center">
+		<div className="flex flex-1 items-center max-w-[1440px] mx-auto">
 			{/* text column */}
 			<div className="flex-1 ">
-				<div className="px-48">
+				<div className="px-12">
 					<h3 className="text-5xl">
 						{title || "MultiChannel E-Commerce"}
 					</h3>
