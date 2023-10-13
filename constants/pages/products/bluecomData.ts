@@ -1,6 +1,11 @@
+import bluecomImage from "@/public/assets/products/bluecom.png";
+import hivepathImage from "@/public/assets/products/hivepath.png";
+import zelloImage from "@/public/assets/products/zello.png";
+
 const bluecomData = {
 	introData: {
 		title: "About Bluecom",
+        buttonTitle: "Visit Website",
 		content: [
 			{
 				paragraph: `Running a multi-channel ecommerce business can be a challenging and tedious process. By adopting a robust multi-channel framework, ecommerce businesses can unlock a plethora of possibilities, ensuring omnipresence in reaching and serving their customers.`,
@@ -69,7 +74,13 @@ const bluecomData = {
 	productMedia: {
 		image: [
 			{
-				src: "1",
+				src: bluecomImage,
+			},
+			{
+				src: hivepathImage,
+			},
+			{
+				src: zelloImage,
 			},
 		],
 	},

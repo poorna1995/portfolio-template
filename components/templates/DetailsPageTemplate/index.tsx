@@ -5,6 +5,7 @@ import { navigationLinks } from "@/constants/navigation";
 import { StaticImageData } from "next/image";
 import CardGrid from "./CardGrid";
 import Contribution from "./Contribution";
+import ProductMedia from "./media";
 
 export default function DetailsPageTemplate({
 	pageType,
@@ -52,7 +53,9 @@ export default function DetailsPageTemplate({
 					/>
 				)}
 			</div>
-
+			{pageInfo?.detailsPageData.productMedia && (
+				<ProductMedia data={pageInfo?.detailsPageData.productMedia} />
+			)}
 			<CardGrid
 				data={otherCardsData || []}
 				title={`Other ${page?.title}`}

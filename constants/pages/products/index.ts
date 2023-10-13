@@ -20,6 +20,7 @@ export interface ListProductCardProps extends ProductCardProps {
 	detailsPageData: {
 		introData?: {
 			title: string;
+			buttonTitle?: string;
 			content: Array<{
 				paragraph: string;
 				list: {
@@ -58,12 +59,6 @@ export interface ListProductCardProps extends ProductCardProps {
 	linkTitle: string;
 	timeline?: string;
 }
-
-
-
-
-
-
 
 const productsPageData: {
 	heroTitle: string;
