@@ -1,3 +1,7 @@
+import dataLossMediaImage1 from "@/public/assets/whitepapers/data-loss-media-image-1.png";
+import dataLossMediaImage2 from "@/public/assets/whitepapers/data-loss-media-image-2.png";
+import dataLossMediaImage3 from "@/public/assets/whitepapers/data-loss-media-image-3.png";
+
 const dataLossData = {
   introData: {
     title: "Introduction",
@@ -18,6 +22,19 @@ const dataLossData = {
             // },
           ],
         },
+      },
+    ],
+  },
+  productMedia: {
+    image: [
+      {
+        src: dataLossMediaImage1,
+      },
+      {
+        src: dataLossMediaImage2,
+      },
+      {
+        src: dataLossMediaImage3,
       },
     ],
   },
