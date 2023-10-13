@@ -6,7 +6,7 @@ interface IntroductionProps {
 	content?: Array<{
 		paragraph: string;
 		list: {
-			type: "ordered" | "unordered";
+			type: string;
 			data: Array<{ title: string }>;
 		};
 	}>;

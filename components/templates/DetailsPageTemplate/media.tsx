@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface ProductMediaProps {
 	data?: {
 		image?: Array<{
-			src: string;
+			src: string | StaticImageData | undefined;
 			alt?: string;
 		}>;
 		video?: Array<{
@@ -22,9 +22,12 @@ export default function ProductMedia({ data }: ProductMediaProps) {
 				{data?.image?.map((item) => {
 					return (
 						<Image
-							src={item.src}
+							src={
+								(item.src as string) ||
+								(item.src as StaticImageData)
+							}
 							alt={"product image "}
-							key={item.src}
+							key={item.src as string}
 							width={600}
 							height={600}
 							className="w-full object-cover"

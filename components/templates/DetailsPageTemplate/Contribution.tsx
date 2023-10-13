@@ -4,11 +4,11 @@ interface ContributionProps {
 	title?: string;
 	content: Array<{
 		list?: {
-			type?: "ordered" | "unordered";
+			type?: string;
 			data?: Array<{
 				title?: string;
 				list?: {
-					type?: "ordered" | "unordered";
+					type?: string;
 					data?: Array<{ title: string }>;
 				};
 			}>;
