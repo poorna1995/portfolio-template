@@ -19,7 +19,7 @@ export default function CardsList({
 						return (
 							<span
 								key={item.title}
-								className="py-4 px-8 text-2xl rounded-md text-black border  border-[rgba(63, 105, 254, 0.20)] "
+								className="py-4 px-8 text-2xl rounded-md text-black border  border-[rgba(63, 105, 254, 0.20)] mr-4 font-default"
 							>
 								{item.linkTitle}{" "}
 							</span>

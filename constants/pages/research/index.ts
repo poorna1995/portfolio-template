@@ -1,10 +1,10 @@
 import { ListProductCardProps } from "../products";
-import bluecomImage from "@/public/assets/products/bluecom.png";
-import hivepathImage from "@/public/assets/products/hivepath.png";
-import zelloImage from "@/public/assets/products/zello.png";
-import bluecomCentralImage from "@/public/assets/products/bluecom-central.png";
-import stylerImage from "@/public/assets/products/styler.png";
-import calpadImage from "@/public/assets/products/calpad.png";
+import computerVisionImage from "@/public/assets/research/computer-vision.png";
+import aiInerenceImage from "@/public/assets/research/ai-inference.png";
+import transformersImage from "@/public/assets/research/transformers-variants.png";
+import chatBotImage from "@/public/assets/research/chat-bot.png";
+import topicModelingImage from "@/public/assets/research/topic-modeling.png";
+import deepReinforcementImage from "@/public/assets/research/deep-learning.png";
 
 import computerVisionData from "../research/computerVisionData";
 import aiInerenceData from "../research/aiInerenceData";
@@ -29,11 +29,11 @@ const researchData: {
       backgroundColor: "#6C60BA",
       count: 1,
       countTextColor: "#6C60BA",
-      image: bluecomImage,
-      link: "bluecom",
-      website: "https://bluecom.ai",
-      linkTitle: "Bluecom",
-      timeline: "Dec 2022 - Present",
+      image: computerVisionImage,
+      link: "computer-vision",
+      website: "",
+      linkTitle: "Computer Vision",
+      timeline: "",
       detailsPageData: computerVisionData,
     },
     {
@@ -43,11 +43,11 @@ const researchData: {
       backgroundColor: "#945980",
       count: 2,
       countTextColor: "#945980",
-      image: hivepathImage,
-      link: "hivepath",
-      website: "https://hivepath.io",
-      linkTitle: "Hivepath",
-      timeline: "July 2021 - March 2022",
+      image: aiInerenceImage,
+      link: "ai-inference",
+      website: "",
+      linkTitle: "AI Inference",
+      timeline: "",
       detailsPageData: aiInerenceData,
     },
     {
@@ -57,11 +57,11 @@ const researchData: {
       backgroundColor: "#BAD060",
       count: 3,
       countTextColor: "#BAD060",
-      image: zelloImage,
-      link: "zello",
-      website: "https://zello.live",
-      linkTitle: "Zello",
-      timeline: "March 2022 - July 2022",
+      image: transformersImage,
+      link: "transformers",
+      website: "",
+      linkTitle: "Transformers",
+      timeline: "",
       detailsPageData: transformersData,
     },
     {
@@ -70,11 +70,11 @@ const researchData: {
       backgroundColor: "#79C7FF",
       count: 4,
       countTextColor: "#79C7FF",
-      image: calpadImage,
-      link: "calpad",
-      website: "https://calpad.vercel.app",
-      linkTitle: "Calpad",
-      timeline: "Oct 2022 - Dec 2022",
+      image: chatBotImage,
+      link: "chat-bot",
+      website: "",
+      linkTitle: "Chat Bot",
+      timeline: "",
       detailsPageData: chatBotData,
     },
     {
@@ -84,11 +84,11 @@ const researchData: {
       backgroundColor: "#123578",
       count: 5,
       countTextColor: "#123578",
-      image: bluecomCentralImage,
+      image: topicModelingImage,
       link: "bluecom-central",
       website: "https://bluecom.ai",
       linkTitle: "Bluecom Central",
-      timeline: "Dec 2022 - Present",
+      timeline: "",
       detailsPageData: topicModelingData,
     },
     {
@@ -97,11 +97,11 @@ const researchData: {
       backgroundColor: "#3DAAA4",
       count: 6,
       countTextColor: "#3DAAA4",
-      image: stylerImage,
-      link: "styler",
-      website: "https://booking.hivepath.io/anoos",
-      linkTitle: "Styler",
-      timeline: "Feb 2022 - July 2022",
+      image: deepReinforcementImage,
+      link: "deep-reinforcement-learning",
+      website: "",
+      linkTitle: "Deep Learning",
+      timeline: "",
       detailsPageData: deepReinforcementData,
       imageStyles: {
         maxHeight: "600px",
