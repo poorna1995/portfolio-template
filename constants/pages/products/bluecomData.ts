@@ -34,27 +34,29 @@ const bluecomData = {
 						},
 						{
 							title: `Played a crucial role in integrating multiple channels `,
-							list: "unordered",
-							data: [
-								{
-									title: `Woocommerce`,
-								},
-								{
-									title: "Shopify",
-								},
-								{
-									title: "etsy",
-								},
-								{
-									title: "Ebay",
-								},
-								{
-									title: "Amazon",
-								},
-								{
-									title: "Stripe",
-								},
-							],
+							list: {
+								type: "unordered",
+								data: [
+									{
+										title: `Woocommerce`,
+									},
+									{
+										title: "Shopify",
+									},
+									{
+										title: "etsy",
+									},
+									{
+										title: "Ebay",
+									},
+									{
+										title: "Amazon",
+									},
+									{
+										title: "Stripe",
+									},
+								],
+							},
 						},
 						{
 							title: `Built detailed documentation on the domain specific content`,

@@ -28,12 +28,42 @@ export interface ListProductCardProps extends ProductCardProps {
 				};
 			}>;
 		};
-		contributionData?: {};
-		productMedia?: {};
+		contributionData?: {
+			title: string;
+			content: Array<{
+				paragraph?: string;
+				list?: {
+					type?: "ordered" | "unordered";
+					data?: Array<{
+						title?: string;
+						list?: {
+							type?: "ordered" | "unordered";
+							data?: Array<{ title: string }>;
+						};
+					}>;
+				};
+			}>;
+		};
+		productMedia?: {
+			image?: Array<{
+				src: string;
+				alt?: string;
+			}>;
+			video?: Array<{
+				src: string;
+				alt?: string;
+			}>;
+		};
 	};
 	linkTitle: string;
 	timeline?: string;
 }
+
+
+
+
+
+
 
 const productsPageData: {
 	heroTitle: string;
