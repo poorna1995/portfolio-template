@@ -5,12 +5,13 @@ import dataTech from "@/public/assets/whitepapers/data-tech.png";
 import messagingApp from "@/public/assets/whitepapers/messaging-app.png";
 import multiChannel from "@/public/assets/whitepapers/multichannel-ecom.png";
 import transformation from "@/public/assets/whitepapers/transformation.png";
-import bluecomData from "../products/bluecomData";
-import hivepathData from "../products/hivepathData";
-import zelloData from "../products/zelloData";
-import calpadData from "../products/calpadData";
-import bluecomCentralData from "../products/bluecomCentralData";
-import stylerData from "../products/stylerData";
+
+import aiWhitepaperData from "../whitepapers/aiWhitepaperData";
+import dataLossData from "../whitepapers/dataLossData";
+import multiChannelData from "../whitepapers/multiChannelData";
+import messagingAppData from "../whitepapers/messagingAppData";
+import transformerData from "../whitepapers/transformerData";
+import techStackData from "../whitepapers/techStackData";
 
 const whitepapersPageData: {
   heroTitle: string;
@@ -32,7 +33,7 @@ const whitepapersPageData: {
       website: "https://bluecom.ai",
       linkTitle: "Bluecom",
       timeline: "Dec 2022 - Present",
-      detailsPageData: bluecomData,
+      detailsPageData: aiWhitepaperData,
     },
     {
       title: "Data Loss Protection",
@@ -46,7 +47,7 @@ const whitepapersPageData: {
       website: "https://hivepath.io",
       linkTitle: "Hivepath",
       timeline: "July 2021 - March 2022",
-      detailsPageData: hivepathData,
+      detailsPageData: dataLossData,
     },
     {
       title: "MultiChannel E-Commerce",
@@ -59,7 +60,7 @@ const whitepapersPageData: {
       website: "https://zello.live",
       linkTitle: "Zello",
       timeline: "March 2022 - July 2022",
-      detailsPageData: zelloData,
+      detailsPageData: multiChannelData,
     },
     {
       title: "Messaging App",
@@ -72,7 +73,7 @@ const whitepapersPageData: {
       website: "https://calpad.vercel.app",
       linkTitle: "Calpad",
       timeline: "Oct 2022 - Dec 2022",
-      detailsPageData: calpadData,
+      detailsPageData: messagingAppData,
     },
     {
       title: "Transformers Architecture",
@@ -86,7 +87,7 @@ const whitepapersPageData: {
       website: "https://bluecom.ai",
       linkTitle: "Bluecom Central",
       timeline: "Dec 2022 - Present",
-      detailsPageData: bluecomCentralData,
+      detailsPageData: transformerData,
     },
     {
       title: "Data Tech Stack ",
@@ -99,7 +100,7 @@ const whitepapersPageData: {
       website: "https://booking.hivepath.io/anoos",
       linkTitle: "Styler",
       timeline: "Feb 2022 - July 2022",
-      detailsPageData: stylerData,
+      detailsPageData: techStackData,
       imageStyles: {
         maxHeight: "600px",
         maxWidth: "400px",

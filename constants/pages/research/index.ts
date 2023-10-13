@@ -5,12 +5,13 @@ import zelloImage from "@/public/assets/products/zello.png";
 import bluecomCentralImage from "@/public/assets/products/bluecom-central.png";
 import stylerImage from "@/public/assets/products/styler.png";
 import calpadImage from "@/public/assets/products/calpad.png";
-import bluecomData from "../products/bluecomData";
-import hivepathData from "../products/hivepathData";
-import zelloData from "../products/zelloData";
-import calpadData from "../products/calpadData";
-import bluecomCentralData from "../products/bluecomCentralData";
-import stylerData from "../products/stylerData";
+
+import computerVisionData from "../research/computerVisionData";
+import aiInerenceData from "../research/aiInerenceData";
+import transformersData from "../research/transformersData";
+import chatBotData from "../research/chatBotData";
+import topicModelingData from "../research/topicModelingData";
+import deepReinforcementData from "../research/deepReinforcementData";
 
 const researchData: {
   heroTitle: string;
@@ -33,7 +34,7 @@ const researchData: {
       website: "https://bluecom.ai",
       linkTitle: "Bluecom",
       timeline: "Dec 2022 - Present",
-      detailsPageData: bluecomData,
+      detailsPageData: computerVisionData,
     },
     {
       title: "AI Inference",
@@ -47,7 +48,7 @@ const researchData: {
       website: "https://hivepath.io",
       linkTitle: "Hivepath",
       timeline: "July 2021 - March 2022",
-      detailsPageData: hivepathData,
+      detailsPageData: aiInerenceData,
     },
     {
       title: "Transformers Variants – Technical Overview",
@@ -61,7 +62,7 @@ const researchData: {
       website: "https://zello.live",
       linkTitle: "Zello",
       timeline: "March 2022 - July 2022",
-      detailsPageData: zelloData,
+      detailsPageData: transformersData,
     },
     {
       title: "Chat Bot Using Deep Learning - LSTM, RNN",
@@ -74,7 +75,7 @@ const researchData: {
       website: "https://calpad.vercel.app",
       linkTitle: "Calpad",
       timeline: "Oct 2022 - Dec 2022",
-      detailsPageData: calpadData,
+      detailsPageData: chatBotData,
     },
     {
       title: "Topic Modelling using NLP",
@@ -88,7 +89,7 @@ const researchData: {
       website: "https://bluecom.ai",
       linkTitle: "Bluecom Central",
       timeline: "Dec 2022 - Present",
-      detailsPageData: bluecomCentralData,
+      detailsPageData: topicModelingData,
     },
     {
       title: "Deep Reinforcement Learning",
@@ -101,7 +102,7 @@ const researchData: {
       website: "https://booking.hivepath.io/anoos",
       linkTitle: "Styler",
       timeline: "Feb 2022 - July 2022",
-      detailsPageData: stylerData,
+      detailsPageData: deepReinforcementData,
       imageStyles: {
         maxHeight: "600px",
         maxWidth: "400px",
