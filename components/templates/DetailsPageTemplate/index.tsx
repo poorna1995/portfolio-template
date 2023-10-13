@@ -24,7 +24,10 @@ export default function DetailsPageTemplate({
 				description={pageInfo?.description}
 				image={pageInfo?.image as StaticImageData}
 			/>
-			<IntroductionComponent />
+			<IntroductionComponent
+				title={pageInfo?.detailsPageData?.introData?.title}
+				content={pageInfo?.detailsPageData?.introData?.content}
+			/>
 
 			<CardGrid
 				data={otherCardsData || []}

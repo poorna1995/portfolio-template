@@ -17,7 +17,20 @@ import stylerImage from "@/public/assets/products/styler.png";
 import calpadImage from "@/public/assets/products/calpad.png";
 
 export interface ListProductCardProps extends ProductCardProps {
-	detailsPageData: {};
+	detailsPageData: {
+		introData?: {
+			title: string;
+			content: Array<{
+				paragraph: string;
+				list: {
+					type: "ordered" | "unordered";
+					data: Array<{ title: string }>;
+				};
+			}>;
+		};
+		contributionData?: {};
+		productMedia?: {};
+	};
 	linkTitle: string;
 	timeline?: string;
 }
