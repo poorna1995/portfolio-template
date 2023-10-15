@@ -16,9 +16,10 @@ export default function OtherItemsCard({
 		router.push(`/${pageType}/${data.link}`);
 	};
 	return (
-		<div className="py-4 px-8 border border-[rgba(0, 0, 0, 0.20)] rounded-md">
+		<div className="py-10 px-8 border border-[rgba(0, 0, 0, 0.40)] rounded-md">
 			<h1 className="mb-12 text-3xl font-display">{data.title}</h1>
-			<Button onClick={() => handleViewDetail()}>View Detail</Button>
+			<Button  className="px-6 text-[18px] bg-[#ECF0FF] text-[#3F69FE] duration-600 font-default"
+			onClick={() => handleViewDetail()}>View Detail</Button>
 		</div>
 	);
 }

@@ -18,7 +18,7 @@ export default function DetailsPageHeroComponent({
 }) {
 	return (
 		<div className="w-full p-24 bg-black">
-			<div className="flex-1 flex items-center max-w-[1440px] mx-auto">
+			<div className="flex-1 flex items-center max-w-[1600px] mx-auto">
 				{/* text */}
 				<div className="flex-1">
 					<h1 className="text-6xl font-display text-white mb-8">
