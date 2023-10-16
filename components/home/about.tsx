@@ -3,8 +3,8 @@ import React from "react";
 export default function AboutMeComponent() {
 	return (
 		<div className="pt-4 border-t border-black">
-			<h3 className="text-3xl font-display">About Me</h3>
-			<p className="text-lg">
+			<h3 className="my-4 text-3xl font-display">About Me</h3>
+			<p className="mb-4 text-lg">
 				A full-stack Software engineer & designer and a creative thinker
 				with 6+ years of industrial experience. Strongly driven towards
 				creating value for business & technology stakeholders, bringing
