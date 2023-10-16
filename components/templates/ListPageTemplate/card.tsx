@@ -46,7 +46,7 @@ export default function ProductCard({
       <div className="flex-1 items-center justify-center">
         <div className="flex px-12">
           <h1
-            className=" text-5xl mr-8"
+            className=" text-5xl mr-8 font-display"
             style={{
               color: countTextColor,
             }}
@@ -54,8 +54,8 @@ export default function ProductCard({
             {count}
           </h1>
           <div>
-            <h3 className="text-5xl">{title || "MultiChannel E-Commerce"}</h3>
-            <p className="text-3xl mt-8">
+            <h3 className="text-5xl font-display">{title || "MultiChannel E-Commerce"}</h3>
+            <p className="text-3xl mt-8 font-default">
               {description ||
                 `Centralize and Streamline Your Multi-Channel Business`}
             </p>

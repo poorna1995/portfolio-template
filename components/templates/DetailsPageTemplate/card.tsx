@@ -17,7 +17,7 @@ export default function OtherItemsCard({
 	};
 	return (
 		<div className="py-4 px-8 border border-[rgba(0, 0, 0, 0.20)] rounded-md">
-			<h1 className="mb-12 text-3xl">{data.title}</h1>
+			<h1 className="mb-12 text-3xl font-display">{data.title}</h1>
 			<Button onClick={() => handleViewDetail()}>View Detail</Button>
 		</div>
 	);
