@@ -31,7 +31,7 @@ export default function NewHeader() {
                   <Link href={item.path}>{item.title}</Link>
                 </li>
               ))}
-              <Button className="ml-10 menu-item download-button">
+              <Button className="ml-10 px-8 menu-item download-button">
                 Download CV
               </Button>
             </ul>

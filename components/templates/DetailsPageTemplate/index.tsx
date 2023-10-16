@@ -33,8 +33,8 @@ export default function DetailsPageTemplate({
       <div
         className={
           hasContributionData
-            ? "max-w-[1440px] mx-auto grid grid-cols-2"
-            : "max-w-[1440px] mx-auto "
+            ? "max-w-[1600px] mx-auto grid grid-cols-2"
+            : "max-w-[1600px] mx-auto "
         }
       >
         <IntroductionComponent

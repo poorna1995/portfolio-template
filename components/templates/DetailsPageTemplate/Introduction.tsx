@@ -17,8 +17,8 @@ export default function IntroductionComponent({
 	content,
 }: IntroductionProps) {
 	return (
-		<div className="max-w-[1440px] mx-auto">
-			<h1 className="text-4xl mt-4 font-display">{title}</h1>
+		<div className="max-w-[1600px] mx-auto">
+			<h1 className="text-4xl mt-12 font-display">{title}</h1>
 
 			{content?.map((item) => {
 				return (
@@ -26,12 +26,12 @@ export default function IntroductionComponent({
 						{" "}
 						<p
 							key={item.paragraph}
-							className="text-2xl mt-4 font-default"
+							className="text-[18px] leading-8 mt-4 font-default"
 						>
 							{item.paragraph}
 						</p>
 						{item.list.type === "ordered" && (
-							<ol className="list-decimal list-inside font-default">
+							<ol className="list-decimal pt-4 text-[18px] leading-9 list-inside font-default">
 								{item.list.data.map((listItem) => {
 									return (
 										<li
@@ -47,7 +47,7 @@ export default function IntroductionComponent({
 					</div>
 				);
 			})}
-			<Button className="mt-4">Download Whitepaper</Button>
+			<Button className="mt-8 px-6  mb-16 text-[18px]">Download Whitepaper</Button>
 		</div>
 	);
 }

@@ -5,23 +5,28 @@ import zelloImage4 from "@/public/assets/products/zello-media-image-4.png";
 
 const zelloData = {
   introData: {
-    title: "About Bluecom",
+    title: "About Zello.live",
     buttonTitle: "Visit Website",
     content: [
       {
-        paragraph: `Running a multi-channel ecommerce business can be a challenging and tedious process. By adopting a robust multi-channel framework, ecommerce businesses can unlock a plethora of possibilities, ensuring omnipresence in reaching and serving their customers.`,
+        paragraph: `Share Every MomentFaster With Widgets!
+        Turn your Homescreens into a fun chatroom full of albums. Send & receive instant photo widgets to never miss out on a good thing! `,
         list: {
           type: "ordered",
           data: [
-            { title: `Product Information Management` },
+            { title: `Capture memories from your Camera` },
             {
-              title: `Inventory Management`,
+              title: `Send pictures to multiple phone screens at the same time.`,
             },
             {
-              title: `Purchase Order Management`,
+              title: `Create one or multiple Groups. Add & Invite all your contacts!`,
             },
             {
-              title: `Warehouse managemenrt`,
+              title: `Track all your Groups and their details in a clean list view.`,
+            },
+
+            {
+              title: `Find all your shared pictures in a smooth timeline view.`,
             },
           ],
         },
