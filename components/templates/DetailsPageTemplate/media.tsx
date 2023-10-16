@@ -16,9 +16,9 @@ interface ProductMediaProps {
 
 export default function ProductMedia({ data }: ProductMediaProps) {
 	return (
-		<div className="max-w-[1440px] mx-auto ">
-			<h1 className="text-4xl my-4 font-display">Product Media</h1>
-			<div className="grid grid-cols-3 gap-8">
+		<div className="max-w-[1600px] py-12 mx-auto ">
+			<h1 className="text-4xl my-6 font-display">Product Media</h1>
+			<div className="grid grid-cols-2 gap-2">
 				{data?.image?.map((item) => {
 					return (
 						<Image
@@ -28,8 +28,8 @@ export default function ProductMedia({ data }: ProductMediaProps) {
 							}
 							alt={"product image "}
 							key={item.src as string}
-							width={600}
-							height={600}
+							width={800}
+							height={800}
 							className="w-full object-cover"
 						/>
 					);

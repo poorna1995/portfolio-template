@@ -41,12 +41,12 @@ export default function ProductCard({
   };
 
   return (
-    <div className="flex flex-1 items-center max-w-[1440px] mx-auto">
+    <div className="flex flex-1 items-center max-w-[1700px] mx-auto">
       {/* text column */}
       <div className="flex-1 items-center justify-center">
-        <div className="flex px-12">
+        <div className="flex px-1">
           <h1
-            className=" text-5xl mr-8 font-display"
+            className=" text-7xl mr-8 px-10 font-display"
             style={{
               color: countTextColor,
             }}
@@ -54,13 +54,13 @@ export default function ProductCard({
             {count}
           </h1>
           <div>
-            <h3 className="text-5xl font-display">{title || "MultiChannel E-Commerce"}</h3>
-            <p className="text-3xl mt-8 font-default">
+            <h3 className="text-6xl font-display">{title || "MultiChannel E-Commerce"}</h3>
+            <p className="text-2xl mt-4 mr-4 font-default">
               {description ||
                 `Centralize and Streamline Your Multi-Channel Business`}
             </p>
             <Button
-              className="mt-8 color-#3F69FE "
+              className="mt-6 px-8 text-[18px] color-#3F69FE "
               onClick={() => handleViewDetail()}
             >
               View Detail
@@ -70,17 +70,17 @@ export default function ProductCard({
       </div>
       {/* image column */}
       <div
-        className={`flex-1 py-24 `}
+        className={`flex-1 py-36 `}
         style={{
           background: backgroundColor,
         }}
       >
         <Image
           src={image || importedImage}
-          width={600}
-          height={600}
+          width={700}
+          height={700}
           alt="placeholder"
-          className="ml-24 max-h-[800px] object-fit"
+          className="ml-24 max-h-[900px] object-fit"
           style={{ ...imageStyles }}
         />
       </div>

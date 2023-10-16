@@ -10,7 +10,7 @@ export default function Footer() {
         backgroundColor: "#3F69FE",
       }}
     >
-      <div className="flex items-center justify-between py-4  max-w-[1440px] mx-auto">
+      <div className="flex items-center justify-between py-4  max-w-[1600px] mx-auto">
         <div className="flex-1 flex-col items-center justify-start py-0  max-w-[440px] mx-auto gap-8">
           <Link href="/" className="text-3xl font-bold text-white">
             P.

@@ -18,13 +18,13 @@ interface ContributionProps {
 
 export default function Contribution({ title, content }: ContributionProps) {
 	return (
-		<div className="px-8">
-			<h1 className="text-4xl my-4 font-display">{title}</h1>
+		<div className="px-24">
+			<h1 className="text-4xl  mt-12 mb-4 font-display">{title}</h1>
 			{content.map((item, index) => {
 				return (
 					<div key={index}>
 						{item.list?.type === "ordered" && (
-							<ol className="list-decimal list-inside">
+							<ol className="list-decimal text-[18px] leading-9 list-inside">
 								{item.list?.data?.map((listItem, index) => {
 									return (
 										<li key={index}>
