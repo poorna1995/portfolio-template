@@ -3,7 +3,6 @@ import React from "react";
 import importedImage from "@/public/assets/whitepapers/ai-and-compute.png";
 import { Button } from "@/components/ui/button";
 
-
 export default function DetailsPageHeroComponent({
 	title,
 	description,
@@ -22,10 +21,10 @@ export default function DetailsPageHeroComponent({
 			<div className="flex-1 flex items-center max-w-[1440px] mx-auto">
 				{/* text */}
 				<div className="flex-1">
-					<h1 className="text-6xl text-white mb-8">
+					<h1 className="text-6xl font-display text-white mb-8">
 						{title || `AI Compute- Technical Deep Dive`}
 					</h1>
-					<p className="text-3xl text-white mb-8">
+					<p className="text-3xl text-white mb-8 font-default">
 						{description ||
 							`Explore AI computing hardware and accelerators`}
 					</p>

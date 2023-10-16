@@ -4,11 +4,11 @@ interface ContributionProps {
 	title?: string;
 	content: Array<{
 		list?: {
-			type?: "ordered" | "unordered";
+			type?: string;
 			data?: Array<{
 				title?: string;
 				list?: {
-					type?: "ordered" | "unordered";
+					type?: string;
 					data?: Array<{ title: string }>;
 				};
 			}>;
@@ -19,7 +19,7 @@ interface ContributionProps {
 export default function Contribution({ title, content }: ContributionProps) {
 	return (
 		<div className="px-8">
-			<h1 className="text-4xl my-4">{title}</h1>
+			<h1 className="text-4xl my-4 font-display">{title}</h1>
 			{content.map((item, index) => {
 				return (
 					<div key={index}>

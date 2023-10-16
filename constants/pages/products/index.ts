@@ -15,6 +15,7 @@ import zelloImage from "@/public/assets/products/zello.png";
 import bluecomCentralImage from "@/public/assets/products/bluecom-central.png";
 import stylerImage from "@/public/assets/products/styler.png";
 import calpadImage from "@/public/assets/products/calpad.png";
+import { StaticImageData } from "next/image";
 
 export interface ListProductCardProps extends ProductCardProps {
 	detailsPageData: {
@@ -24,7 +25,7 @@ export interface ListProductCardProps extends ProductCardProps {
 			content: Array<{
 				paragraph: string;
 				list: {
-					type: "ordered" | "unordered";
+					type: string;
 					data: Array<{ title: string }>;
 				};
 			}>;
@@ -34,11 +35,11 @@ export interface ListProductCardProps extends ProductCardProps {
 			content: Array<{
 				paragraph?: string;
 				list?: {
-					type?: "ordered" | "unordered";
+					type?: string;
 					data?: Array<{
 						title?: string;
 						list?: {
-							type?: "ordered" | "unordered";
+							type?: string;
 							data?: Array<{ title: string }>;
 						};
 					}>;
@@ -47,7 +48,7 @@ export interface ListProductCardProps extends ProductCardProps {
 		};
 		productMedia?: {
 			image?: Array<{
-				src: string;
+				src: string | StaticImageData | undefined;
 				alt?: string;
 			}>;
 			video?: Array<{

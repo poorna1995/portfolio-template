@@ -6,7 +6,7 @@ interface IntroductionProps {
 	content?: Array<{
 		paragraph: string;
 		list: {
-			type: "ordered" | "unordered";
+			type: string;
 			data: Array<{ title: string }>;
 		};
 	}>;
@@ -18,17 +18,20 @@ export default function IntroductionComponent({
 }: IntroductionProps) {
 	return (
 		<div className="max-w-[1440px] mx-auto">
-			<h1 className="text-4xl mt-4">{title}</h1>
+			<h1 className="text-4xl mt-4 font-display">{title}</h1>
 
 			{content?.map((item) => {
 				return (
 					<div key={item.paragraph}>
 						{" "}
-						<p key={item.paragraph} className="text-2xl mt-4 ">
+						<p
+							key={item.paragraph}
+							className="text-2xl mt-4 font-default"
+						>
 							{item.paragraph}
 						</p>
 						{item.list.type === "ordered" && (
-							<ol className="list-decimal list-inside">
+							<ol className="list-decimal list-inside font-default">
 								{item.list.data.map((listItem) => {
 									return (
 										<li
