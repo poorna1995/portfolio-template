@@ -28,8 +28,19 @@ export async function generateMetadata(
 ): Promise<Metadata> {
 	// read route params
 	const pageType = params.pageType;
+	const page = navigationLinks.find((item) => item.key === pageType);
+	const subPage = (Array.isArray(page?.subMenu) &&
+		page?.subMenu.find((item) => item.key === params.id)) ||
+		(page?.pageData &&
+			Array.isArray(page?.pageData.listData) &&
+			page?.pageData.listData.find(
+				(item) => item.link === params.id,
+			)) || {
+			title: "Page not found",
+		};
 
-	let title = getTitle(pageType, params.id);
+	let title = subPage.title;
+	// getTitle(pageType, params.id);
 	// optionally access and extend (rather than replace) parent metadata
 
 	return {
@@ -51,7 +62,7 @@ export default function DetailsPage({
 	};
 
 	return (
-		<main className="flex min-h-screen  flex-col ">
+		<main className="flex flex-col min-h-screen ">
 			{pageType === "recognition" ? (
 				<RecognitionPageTemplate />
 			) : (
