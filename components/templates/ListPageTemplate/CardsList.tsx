@@ -13,13 +13,13 @@ export default function CardsList({
 }) {
 	return (
 		<div className="py-8">
-			<div className="max-w-[1440px] mx-auto my-8 flex justify-between items-center">
+			<div className="max-w-[1200px] mx-auto my-8 flex justify-between items-center">
 				{Array.isArray(data) &&
 					data.map((item) => {
 						return (
 							<span
 								key={item.title}
-								className="py-4 px-8 text-2xl rounded-md text-black border  border-[rgba(63, 105, 254, 0.20)] mr-4 font-default"
+								className="py-3 px-8 text-[18px] rounded-lg text-black border border-[rgba(63, 105, 254, 0.80) ] mr-4 font-default"
 							>
 								{item.linkTitle}{" "}
 							</span>

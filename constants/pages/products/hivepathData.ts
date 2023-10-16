@@ -2,23 +2,24 @@ import hivepathImage from "@/public/assets/products/hivepath-media-image.png";
 
 const hivepathData = {
   introData: {
-    title: "About Bluecom",
+    title: "About ",
     buttonTitle: "Visit Website",
     content: [
       {
-        paragraph: `Running a multi-channel ecommerce business can be a challenging and tedious process. By adopting a robust multi-channel framework, ecommerce businesses can unlock a plethora of possibilities, ensuring omnipresence in reaching and serving their customers.`,
+        paragraph: `Hivepath is dedicated to creating a new, efficient approach to networking. Connect, share experiences, and delve into the pleasures of meaningful networking.
+`,
         list: {
           type: "ordered",
           data: [
-            { title: `Product Information Management` },
+            { title: `Establishing a professional network` },
             {
-              title: `Inventory Management`,
+              title: `Facilitating one-on-one discussions with professionals`,
             },
             {
-              title: `Purchase Order Management`,
+              title: `Setting up a professional profile website`,
             },
             {
-              title: `Warehouse managemenrt`,
+              title: `tailoring exclusive offerings to your specific requirements`,
             },
           ],
         },
