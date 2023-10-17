@@ -1,4 +1,5 @@
 import productsPageData from "./pages/products";
+import recognitionData from "./pages/recognition";
 import researchData from "./pages/research";
 import whitepapersPageData from "./pages/whitepapers";
 
@@ -18,11 +19,17 @@ export const navigationLinks = [
 		title: "Recognition",
 		href: "/recognition",
 		key: "recognition",
+		pageData: recognitionData,
 		subMenu: [
 			{
 				title: "Best Employee Award",
 				href: "/recognition/best-employee-award",
 				key: "best-employee-award",
+			},
+			{
+				title: "Worldquant",
+				href: "/recognition/worldquant",
+				key: "worldquant",
 			},
 		],
 	},

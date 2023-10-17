@@ -20,19 +20,19 @@ import { StaticImageData } from "next/image";
 export interface ListProductCardProps extends ProductCardProps {
 	detailsPageData: {
 		introData?: {
-			title: string;
+			title?: string;
 			buttonTitle?: string;
-			content: Array<{
-				paragraph: string;
+			content?: Array<{
+				paragraph?: string;
 				list: {
 					type: string;
-					data: Array<{ title: string }>;
+					data: Array<{ title: string; description?: string }>;
 				};
 			}>;
 		};
 		contributionData?: {
-			title: string;
-			content: Array<{
+			title?: string;
+			content?: Array<{
 				paragraph?: string;
 				list?: {
 					type?: string;
@@ -82,6 +82,12 @@ const productsPageData: {
 			linkTitle: "Bluecom",
 			timeline: "Dec 2022 - Present",
 			detailsPageData: bluecomData,
+			imageStyles: {
+				maxHeight: "600px",
+				maxWidth: "600px",
+				fitObject: "fill",
+				align: "center",
+			},
 		},
 		{
 			title: "Hivepath.io",
@@ -95,6 +101,12 @@ const productsPageData: {
 			linkTitle: "Hivepath",
 			timeline: "July 2021 - March 2022",
 			detailsPageData: hivepathData,
+			imageStyles: {
+				maxHeight: "600px",
+				maxWidth: "600px",
+				fitObject: "fill",
+				align: "center",
+			},
 		},
 		{
 			title: "Zello.live",
@@ -108,6 +120,12 @@ const productsPageData: {
 			linkTitle: "Zello",
 			timeline: "March 2022 - July 2022",
 			detailsPageData: zelloData,
+			imageStyles: {
+				maxHeight: "600px",
+				maxWidth: "600px",
+				fitObject: "fill",
+				align: "center",
+			},
 		},
 		{
 			title: "Calpad.co",
@@ -121,6 +139,12 @@ const productsPageData: {
 			linkTitle: "Calpad",
 			timeline: "Oct 2022 - Dec 2022",
 			detailsPageData: calpadData,
+			imageStyles: {
+				maxHeight: "600px",
+				maxWidth: "600px",
+				fitObject: "fill",
+				align: "center",
+			},
 		},
 		{
 			title: "Bluecom.central",
@@ -134,14 +158,21 @@ const productsPageData: {
 			linkTitle: "Bluecom Central",
 			timeline: "Dec 2022 - Present",
 			detailsPageData: bluecomCentralData,
+			imageStyles: {
+				maxHeight: "600px",
+				maxWidth: "600px",
+				fitObject: "fill",
+				align: "center",
+			},
 		},
 		{
 			title: "Styler",
-			description:"Transformer architecture has been a pivotal discovery in past five years of deep learning.",
+			description:
+				"Transformer architecture has been a pivotal discovery in past five years of deep learning.",
 			backgroundColor: "#591192",
 			count: 6,
 			countTextColor: "#591192",
-	
+
 			image: stylerImage,
 			link: "styler",
 			website: "https://booking.hivepath.io/anoos",
@@ -152,8 +183,8 @@ const productsPageData: {
 			imageStyles: {
 				maxHeight: "600px",
 				maxWidth: "300px",
-				fitObject:"fill",
-				align:"center"
+				fitObject: "fill",
+				align: "center",
 			},
 		},
 	],

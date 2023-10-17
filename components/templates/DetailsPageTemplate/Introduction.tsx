@@ -4,10 +4,10 @@ import React from "react";
 interface IntroductionProps {
 	title?: string;
 	content?: Array<{
-		paragraph: string;
+		paragraph?: string;
 		list: {
 			type: string;
-			data: Array<{ title: string }>;
+			data: Array<{ title: string; description?: string }>;
 		};
 	}>;
 }
@@ -18,7 +18,7 @@ export default function IntroductionComponent({
 }: IntroductionProps) {
 	return (
 		<div className="max-w-[1600px] mx-auto">
-			<h1 className="text-4xl mt-12 font-display">{title}</h1>
+			<h1 className="mt-12 text-4xl font-display">{title}</h1>
 
 			{content?.map((item) => {
 				return (
@@ -47,7 +47,9 @@ export default function IntroductionComponent({
 					</div>
 				);
 			})}
-			<Button className="mt-8 px-6  mb-16 text-[18px]">Download Whitepaper</Button>
+			<Button className="mt-8 px-6  mb-16 text-[18px]">
+				Download Whitepaper
+			</Button>
 		</div>
 	);
 }
