@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMeComponent() {
   return (
-    <div className="pt-4 border-t border-black max-w-4xl mx-auto">
+    <div className="pt-4 border-t border-black">
       <h3 className="my-4 text-2xl font-medium font-display">About Me</h3>
       <p className="mb-4 text-lg font-normal">
         A full-stack Software engineer & designer and a creative thinker with 6+

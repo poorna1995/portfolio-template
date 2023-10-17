@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import bluecomLogo from "@/public/assets/aboutme/bluecom-logo.png";
 import HivePathlogo from "@/public/assets/aboutme/hivepath-logo.png";
@@ -8,7 +8,7 @@ import NvipaniTechnology from "@/public/assets/aboutme/nvipani-technology-logo.p
 
 export default function ExperienceComponent() {
   return (
-    <div className="my-8 border-t border-black max-w-7xl mx-auto">
+    <div className="my-8 border-t border-black">
       <h2 className="my-4 text-2xl font-medium font-display">Experience</h2>
       {data.map((item, index) => {
         return <ExperienceCard data={item} key={index} />;
@@ -37,24 +37,12 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
       <div className="col-span-11">
         <div className="flex items-center justify-between">
           <h3 className="text-2xl font-display">{companyName}</h3>
-          <span
-            className="text-lg font-medium"
-            style={{
-              color: "#535353",
-            }}
-          >
+          <span className="text-lg font-medium text-[#535353]">
             {timePeriod}
           </span>
         </div>
         <div className="flex items-center justify-between">
-          <p
-            className="text-lg font-medium"
-            style={{
-              color: "#535353",
-            }}
-          >
-            {jobRole}
-          </p>
+          <p className="text-lg font-medium text-[#535353]">{jobRole}</p>
           <p className="text-lg font-medium">{location}</p>
         </div>
         {areaOfContributions && areaOfContributions?.length > 0 && (
@@ -62,12 +50,12 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
             <h4 className="text-xl font-medium">
               Areas of Contribution and Focus:
             </h4>
-            <div className="grid grid-cols-2 my-4 gap-2">
+            <div className="grid grid-cols-2 gap-2 my-4">
               {areaOfContributions.map((item, index) => {
                 return (
                   <span
                     key={index}
-                    className="text-lg font-normal flex items-center gap-2"
+                    className="flex items-center gap-2 text-lg font-normal"
                   >
                     <svg
                       width="22"
@@ -80,9 +68,9 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
                       <path
                         d="M6.50781 11.9766L9.2421 14.7109L14.7107 8.85168"
                         stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                     {item}
@@ -97,31 +85,33 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
             <h4 className="text-xl font-medium">
               Key Contributions to Live Products:
             </h4>
-            {products.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="grid grid-cols-2 my-4 border-solid border-2 border-gray-300 rounded-lg"
-                >
-                  <div className="flex gap-2 items-center p-2">
-                    <div>
-                      <Image
-                        src={item.logo}
-                        alt="logo"
-                        width={40}
-                        height={40}
-                      />
-                    </div>
-                    <div>
-                      <h5 className="text-lg font-semibold">{item.title}</h5>
-                      <p className="text-base font-normal">
-                        {item.description}
-                      </p>
+            <div className="grid grid-cols-2 gap-4">
+              {products.map((item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="my-2 border-2 border-gray-300 border-solid rounded-lg"
+                  >
+                    <div className="flex items-center gap-2 p-2">
+                      <div>
+                        <Image
+                          src={item.logo}
+                          alt="logo"
+                          width={40}
+                          height={40}
+                        />
+                      </div>
+                      <div>
+                        <h5 className="text-lg font-semibold">{item.title}</h5>
+                        <p className="text-base font-normal">
+                          {item.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         )}
         {responsibilities && responsibilities.length > 0 && (
@@ -164,7 +154,7 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
 };
 
 interface ExperienceCardProps {
-  companyLogo: string;
+  companyLogo: string | StaticImageData;
   companyName: string;
   jobRole: string;
   location: string;
@@ -172,7 +162,7 @@ interface ExperienceCardProps {
   description?: string;
   areaOfContributions?: string[];
   products?: {
-    logo: string;
+    logo: string | StaticImageData;
     title: string;
     description: string;
   }[];
