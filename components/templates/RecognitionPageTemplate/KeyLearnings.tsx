@@ -16,7 +16,7 @@ export default function KeyLearnings({
   content,
 }: KeyLearningRecognitionProps) {
   return (
-    <div>
+    <div className="max-w-[1600px] mx-auto">
       {content?.map((item, index) => {
         return (
           <div key={index} className="grid items-center grid-cols-2 gap-8 my-4">

@@ -7,13 +7,13 @@ import worldquantData from "./worldquantData";
 import { KeyLearningRecognitionProps } from "@/components/templates/RecognitionPageTemplate/KeyLearnings";
 
 export interface RecognitionCardProps extends ListProductCardProps {
-  keyLearningData?: Array<KeyLearningRecognitionProps>;
+  keyLearningData?: KeyLearningRecognitionProps;
 }
 
 const recognitionData: {
   heroTitle: string;
   heroDescription: string;
-  listData: Array<ListProductCardProps>;
+  listData: Array<RecognitionCardProps>;
 } = {
   heroTitle: "My Research Work",
   heroDescription:
