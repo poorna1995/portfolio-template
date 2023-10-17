@@ -35,6 +35,12 @@ const researchData: {
       linkTitle: "Computer Vision",
       timeline: "",
       detailsPageData: computerVisionData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "AI Inference",
@@ -49,6 +55,12 @@ const researchData: {
       linkTitle: "AI Inference",
       timeline: "",
       detailsPageData: aiInerenceData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Transformers Variants – Technical Overview",
@@ -63,6 +75,12 @@ const researchData: {
       linkTitle: "Transformers",
       timeline: "",
       detailsPageData: transformersData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Chat Bot Using Deep Learning - LSTM, RNN",
@@ -76,6 +94,12 @@ const researchData: {
       linkTitle: "Chat Bot",
       timeline: "",
       detailsPageData: chatBotData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Topic Modelling using NLP",
@@ -90,6 +114,12 @@ const researchData: {
       linkTitle: "Bluecom Central",
       timeline: "",
       detailsPageData: topicModelingData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Deep Reinforcement Learning",
@@ -105,7 +135,9 @@ const researchData: {
       detailsPageData: deepReinforcementData,
       imageStyles: {
         maxHeight: "600px",
-        maxWidth: "400px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
       },
     },
   ],
