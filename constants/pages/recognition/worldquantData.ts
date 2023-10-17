@@ -35,9 +35,15 @@ const worldquantData = {
             },
           ],
         },
+      },
+    ],
+  },
 
-        keyParagraph: `I've consistently gone the extra mile, ensuring deadlines are met and high-quality work is delivered.`,
-        keyList: {
+  keyLearningData: {
+    content: [
+      {
+        paragraph: `I've consistently gone the extra mile, ensuring deadlines are met and high-quality work is delivered.`,
+        list: {
           type: "unordered",
           data: [
             {
