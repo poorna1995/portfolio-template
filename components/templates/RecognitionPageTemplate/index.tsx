@@ -7,6 +7,8 @@ import Contribution from "../DetailsPageTemplate/Contribution";
 import ProductMedia from "../DetailsPageTemplate/media";
 import CardGrid from "../DetailsPageTemplate/CardGrid";
 import IntroductionForRecognition from "./IntroductionForRecognition";
+import KeyLearnings from "./KeyLearnings";
+import { RecognitionCardProps } from "@/constants/pages/recognition";
 
 export default function RecognitionPageTemplate({
   pageType,
@@ -17,6 +19,7 @@ export default function RecognitionPageTemplate({
 }) {
   const page = navigationLinks.find((item) => item.key === pageType);
   const pageInfo = page?.pageData?.listData.find((item) => item.link === id);
+  const pageDetailedData = pageInfo?.detailsPageData as RecognitionCardProps;
   const otherCardsData = page?.pageData?.listData.filter(
     (item) => item.link !== id
   );
@@ -44,13 +47,17 @@ export default function RecognitionPageTemplate({
           title={pageInfo?.detailsPageData?.introData?.title}
           content={pageInfo?.detailsPageData?.introData?.content || []}
         />
-        {hasContributionData && (
+        {/* {hasContributionData && (
           <Contribution
             title={pageInfo?.detailsPageData?.contributionData?.title}
             content={pageInfo?.detailsPageData.contributionData?.content || []}
           />
-        )}
+        )} */}
       </div>
+      <KeyLearnings
+        title={pageDetailedData?.keyLearningData?.title}
+        content={pageDetailedData?.keyLearningData?.content || []}
+      />
       {/* {pageInfo?.detailsPageData.productMedia && (
         <ProductMedia data={pageInfo?.detailsPageData.productMedia} />
       )} */}
