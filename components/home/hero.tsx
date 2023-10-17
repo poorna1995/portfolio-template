@@ -9,7 +9,7 @@ export default function HomePageHeroComponent() {
         <Image src={image} alt="my image" width={600} height={600} />
       </div>
       <div className="col-span-8 p-24">
-        <h1 className="text-5xl font-display font-medium">
+        <h1 className="text-6xl leading-21 font-display font-medium">
           I create unique solutions that improve people&apos;s lives.
         </h1>
         <p className="mt-4 text-lg font-normal">
@@ -38,11 +38,11 @@ export default function HomePageHeroComponent() {
           business & technology stakeholders.
         </p>
 
-        <div className="flex gap-1">
+        <div className="flex pt-3 gap-2">
           <svg
-            width="35"
-            height="35"
-            viewBox="0 0 35 35"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -66,9 +66,10 @@ export default function HomePageHeroComponent() {
           </svg>
 
           <svg
-            width="35"
-            height="35"
-            viewBox="0 0 35 35"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42
+            "
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -3,10 +3,10 @@ import React from "react";
 export default function Skills() {
   return (
     <div>
-      <h3 className="mt-4 text-2xl font-medium font-display">Core Skills</h3>
+      <h3 className="mt-8 text-3xl font-medium font-display">Core Skills</h3>
       <ul className="list-disc list-inside">
         {data.map((item) => (
-          <li key={item} className="text-lg font-normal">
+          <li key={item} className="text-lg leading-10 font-normal">
             {item}
           </li>
         ))}

@@ -10,7 +10,7 @@ import HobbiesImage6 from "@/public/assets/hobbies/hobbies-image-6.png";
 export default function HobbiesPageTemplate() {
   return (
     <div className="">
-      <h1 className="my-4 text-2xl font-medium">
+      <h1 className="my-4 text-5xl font-medium leading-20 font-display pb-8">
         &quot;Art is more than just a<br /> image. It&apos;s storytelling&quot;
       </h1>
       <div className="grid grid-cols-3 gap-1">
