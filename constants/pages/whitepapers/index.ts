@@ -34,6 +34,12 @@ const whitepapersPageData: {
       linkTitle: "AI White Paper",
       timeline: "",
       detailsPageData: aiWhitepaperData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Data Loss Protection",
@@ -48,6 +54,12 @@ const whitepapersPageData: {
       linkTitle: "Data Loss Protection",
       timeline: "",
       detailsPageData: dataLossData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "MultiChannel E-Commerce",
@@ -61,6 +73,12 @@ const whitepapersPageData: {
       linkTitle: "MultiChannel E-Commerce",
       timeline: "",
       detailsPageData: multiChannelData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Messaging App",
@@ -74,6 +92,12 @@ const whitepapersPageData: {
       linkTitle: "Messaging App",
       timeline: "",
       detailsPageData: messagingAppData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Transformers Architecture",
@@ -88,6 +112,12 @@ const whitepapersPageData: {
       linkTitle: "Transformers Architecture",
       timeline: "",
       detailsPageData: transformerData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Data Tech Stack ",
@@ -103,7 +133,9 @@ const whitepapersPageData: {
       detailsPageData: techStackData,
       imageStyles: {
         maxHeight: "600px",
-        maxWidth: "400px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
       },
     },
   ],
