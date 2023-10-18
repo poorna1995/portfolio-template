@@ -5,8 +5,8 @@ import codeAcademyLogo from "@/public/assets/aboutme/code-academy-logo.png";
 
 export default function Education() {
   return (
-    <div className="mt-8 border-t border-black">
-      <h2 className="my-4 text-2xl font-medium font-display">Education</h2>
+    <div className="mt-8 mr-16 border-t border-black">
+      <h2 className="my-12 text-3xl font-medium font-display">Education</h2>
       {data.map((item, index) => (
         <EducationItem key={index} data={item} />
       ))}
@@ -27,13 +27,13 @@ const EducationItem = ({
   const { institution, institutionLogo, degree, timePeriod, description } =
     data;
   return (
-    <div className="grid grid-cols-12 my-4">
+    <div className="grid grid-cols-12 my-10">
       <div className="col-span-1">
-        <Image src={institutionLogo} alt="logo" width={40} height={40} />
+        <Image src={institutionLogo} alt="logo" width={60} height={60} />
       </div>
       <div className="col-span-11">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-medium font-display">{institution}</h3>{" "}
+          <h3 className="text-[24px] font-medium font-display">{institution}</h3>{" "}
           <span
             className="text-lg font-medium text-[#535353]"
           >
@@ -41,7 +41,7 @@ const EducationItem = ({
           </span>
         </div>
         <h4
-          className="text-base font-medium mb-2 mt-1 text-[#535353]"
+          className="text-base text-[18px] font-medium mb-1 mt-[4px] text-[#535353]"
         >
           {degree}
         </h4>
