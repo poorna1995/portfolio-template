@@ -60,7 +60,7 @@ export default function DetailsPageHeroComponent({
               alt="placeholder"
               height={600}
               width={600}
-              className="w-full"
+              className="ml-24 max-h-[900px] max-w-[600px] object-fit"
               style={{
                 ...imageStyles,
               }}

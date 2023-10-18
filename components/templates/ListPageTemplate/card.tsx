@@ -46,7 +46,7 @@ export default function ProductCard({
   };
 
   return (
-    <div className="flex flex-1 items-center max-w-[1700px] mx-auto">
+    <div className="flex flex-1 items-center max-w-[1700px] bg-[#FBFBFB] mx-auto">
       {/* text column */}
       <div className="items-center justify-center flex-1">
         <div className="flex px-1">
@@ -76,7 +76,7 @@ export default function ProductCard({
         </div>
       </div>
       {/* image column */}
-      {/* <div
+      <div
         className={`flex-1 py-36 `}
         style={{
           background: backgroundColor,
@@ -85,13 +85,13 @@ export default function ProductCard({
         <Image
           src={image || importedImage}
           width={700}
-          height={700}
+          height={400}
           alt="placeholder"
           className="ml-24 max-h-[900px] object-fit"
           style={{ ...imageStyles }}
         />
-      </div> */}
-      <div
+      </div>
+      {/* <div
         className={`flex-1 py-36 `}
         style={{
           background: backgroundColor,
@@ -112,15 +112,15 @@ export default function ProductCard({
           <Image
             src={image || importedImage}
             alt="placeholder"
-            height={600}
-            width={600}
-            className="w-full"
+            height={800}
+            width={800}
+            className="ml-24 max-h-[900px] object-fit"
             style={{
               ...imageStyles,
             }}
           />
         )}
-      </div>
+      </div> */}
     </div>
   );
 }
