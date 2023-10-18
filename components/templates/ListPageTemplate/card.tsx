@@ -15,6 +15,8 @@ export interface ProductCardProps {
   countTextColor: string;
   buttonTitle?: string;
   imageStyles?: {};
+  detailPageVideo?: string;
+  linkForWhitepaperDownload?: string;
 }
 
 export default function ProductCard({
@@ -34,6 +36,8 @@ export default function ProductCard({
     backgroundColor,
     countTextColor,
     imageStyles,
+    detailPageVideo,
+    linkForWhitepaperDownload,
   } = data;
 
   const router = useRouter();
@@ -72,7 +76,7 @@ export default function ProductCard({
         </div>
       </div>
       {/* image column */}
-      <div
+      {/* <div
         className={`flex-1 py-36 `}
         style={{
           background: backgroundColor,
@@ -86,6 +90,36 @@ export default function ProductCard({
           className="ml-24 max-h-[900px] object-fit"
           style={{ ...imageStyles }}
         />
+      </div> */}
+      <div
+        className={`flex-1 py-36 `}
+        style={{
+          background: backgroundColor,
+        }}
+      >
+        {detailPageVideo ? (
+          <iframe
+            className="ml-5 max-h-[900px] object-fit"
+            src={
+              detailPageVideo ||
+              "https://drive.google.com/file/d/1--452_FDub6_nfaRpUc_jFpmFoyuJsAZ/preview"
+            }
+            height={600}
+            width={800}
+            allow="autoplay"
+          ></iframe>
+        ) : (
+          <Image
+            src={image || importedImage}
+            alt="placeholder"
+            height={600}
+            width={600}
+            className="w-full"
+            style={{
+              ...imageStyles,
+            }}
+          />
+        )}
       </div>
     </div>
   );

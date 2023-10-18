@@ -29,6 +29,8 @@ export default function DetailsPageTemplate({
         title={pageInfo?.title}
         description={pageInfo?.description}
         image={pageInfo?.image as StaticImageData}
+        detailPageVideo={pageInfo?.detailPageVideo}
+        linkForWhitepaperDownload={pageInfo?.linkForWhitepaperDownload}
       />
       <div
         className={
