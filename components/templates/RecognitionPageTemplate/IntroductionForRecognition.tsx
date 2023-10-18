@@ -19,7 +19,7 @@ export default function IntroductionForRecognition({
 }: IntroductionForRecognitionProps) {
 	return (
 		<div className="max-w-[1600px] mx-auto">
-			<h1 className="mt-12 mb-12 text-3xl font-medium font-display">
+			<h1 className="mt-28 mb-12 text-4xl font-medium font-display">
 				{title}
 			</h1>
 
@@ -33,7 +33,7 @@ export default function IntroductionForRecognition({
 						>
 							{item.paragraph}
 						</p>
-						<div className="grid grid-cols-2 gap-2 my-4">
+						<div className="grid grid-cols-2 gap-2 my-12">
 							{item.list.data.map((listItem, index) => {
 								return (
 									<div key={index} className="my-2">
@@ -81,7 +81,7 @@ export default function IntroductionForRecognition({
 												</svg>
 											</div>
 											<div>
-												<h5 className="mb-4 text-2xl font-medium">
+												<h5 className="mb-3 text-2xl font-medium">
 													{listItem.title}
 												</h5>
 												<p className="text-lg font-normal">

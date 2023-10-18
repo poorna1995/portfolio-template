@@ -9,7 +9,7 @@ import NvipaniTechnology from "@/public/assets/aboutme/nvipani-technology-logo.p
 export default function ExperienceComponent() {
   return (
     <div className="my-8 border-t border-black">
-      <h2 className="my-4 text-2xl font-medium font-display">Experience</h2>
+      <h2 className="my-12 text-3xl font-medium font-display">Experience</h2>
       {data.map((item, index) => {
         return <ExperienceCard data={item} key={index} />;
       })}
@@ -32,22 +32,22 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
   return (
     <div className="grid grid-cols-12 my-8">
       <div className="col-span-1">
-        <Image src={companyLogo} alt={"logo"} width={40} height={40} />
+        <Image src={companyLogo} alt={"logo"} width={60} height={60} />
       </div>
       <div className="col-span-11">
         <div className="flex items-center justify-between">
-          <h3 className="text-2xl font-display">{companyName}</h3>
-          <span className="text-lg font-medium text-[#535353]">
+          <h3 className="text-2xl font-medium font-display">{companyName}</h3>
+          <span className="text-lg font-regular ">
             {timePeriod}
           </span>
         </div>
         <div className="flex items-center justify-between">
-          <p className="text-lg font-medium text-[#535353]">{jobRole}</p>
-          <p className="text-lg font-medium">{location}</p>
+          <p className="text-lg mt-[4px] font-regular">{jobRole}</p>
+          <p className="text-lg font-regular">{location}</p>
         </div>
         {areaOfContributions && areaOfContributions?.length > 0 && (
           <div className="my-4">
-            <h4 className="text-xl font-medium">
+            <h4 className="text-[18px] font-medium">
               Areas of Contribution and Focus:
             </h4>
             <div className="grid grid-cols-2 gap-2 my-4">
@@ -55,11 +55,11 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
                 return (
                   <span
                     key={index}
-                    className="flex items-center gap-2 text-lg font-normal"
+                    className="flex items-center gap-3 leading-9 text-lg font-normal"
                   >
                     <svg
-                      width="22"
-                      height="22"
+                      width="18"
+                      height="18"
                       viewBox="0 0 22 22"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
         )}{" "}
         {products && products.length > 0 && (
           <div>
-            <h4 className="text-xl font-medium">
+            <h4 className="text-xl mb-4 font-medium">
               Key Contributions to Live Products:
             </h4>
             <div className="grid grid-cols-2 gap-4">
@@ -90,9 +90,9 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
                 return (
                   <div
                     key={index}
-                    className="my-2 border-2 border-gray-300 border-solid rounded-lg"
+                    className="my-1 mr-6 p-2 border-2 border-gray-300 border-solid rounded-[10px]"
                   >
-                    <div className="flex items-center gap-2 p-2">
+                    <div className="flex items-center gap-3 p-3">
                       <div>
                         <Image
                           src={item.logo}
@@ -118,10 +118,10 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
           <div className="my-4">
             {responsibilities.map((item, index) => {
               return (
-                <div key={index} className="flex my-2">
+                <div key={index} className="flex my-2 leading-10">
                   <svg
-                    width="21"
-                    height="22"
+                    width="18"
+                    height="18"
                     viewBox="0 0 21 22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
