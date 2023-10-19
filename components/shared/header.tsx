@@ -12,8 +12,7 @@ export default function Header() {
           P.
         </Link>
         <div className="flex items-center ">
-          <AppNavigation   
-          links={navigationLinks} />
+          <AppNavigation links={navigationLinks} />
           <Button className="ml-10 px-8  menu-item download-button">
             Download CV
           </Button>

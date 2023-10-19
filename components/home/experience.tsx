@@ -37,9 +37,7 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
       <div className="col-span-11">
         <div className="flex items-center justify-between">
           <h3 className="text-2xl font-medium font-display">{companyName}</h3>
-          <span className="text-lg font-regular ">
-            {timePeriod}
-          </span>
+          <span className="text-lg font-regular ">{timePeriod}</span>
         </div>
         <div className="flex items-center justify-between">
           <p className="text-lg mt-[4px] font-regular">{jobRole}</p>
