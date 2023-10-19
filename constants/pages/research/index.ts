@@ -30,6 +30,10 @@ const researchData: {
       count: 1,
       countTextColor: "#6C60BA",
       image: computerVisionImage,
+      detailPageVideo:
+        "https://drive.google.com/file/d/1J2z3RP298T4L0805i1oM19yBTOp279zl/preview",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
       link: "computer-vision",
       website: "",
       linkTitle: "Computer Vision",
@@ -50,6 +54,10 @@ const researchData: {
       count: 2,
       countTextColor: "#945980",
       image: aiInerenceImage,
+      detailPageVideo:
+        "https://drive.google.com/file/d/124oCgCCD66JMCxKCgqcd72TMvNu0Pwrf/preview",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1NHluUF0ZJbFbnV7WKm6ht3v-Z_9t5-QF",
       link: "ai-inference",
       website: "",
       linkTitle: "AI Inference",
@@ -70,6 +78,10 @@ const researchData: {
       count: 3,
       countTextColor: "#BAD060",
       image: transformersImage,
+      detailPageVideo:
+        "https://drive.google.com/file/d/160BZqTOYdIEplucgzVoQKPaHVdPfunTv/preview",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1tzAqBaUNeaYLJ73j2SZUMEmoXkL7765P",
       link: "transformers",
       website: "",
       linkTitle: "Transformers",
@@ -89,6 +101,10 @@ const researchData: {
       count: 4,
       countTextColor: "#79C7FF",
       image: chatBotImage,
+      detailPageVideo:
+        "https://drive.google.com/file/d/1hUTROka57DPEgVTKbHLivVIwcEgQVQIs/preview",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/18mzYvtlR10yNWzoJYHCeW0p2-Jl1v5mU",
       link: "chat-bot",
       website: "",
       linkTitle: "Chat Bot",
@@ -109,6 +125,10 @@ const researchData: {
       count: 5,
       countTextColor: "#123578",
       image: topicModelingImage,
+      detailPageVideo:
+        "https://drive.google.com/file/d/1r_pYjpxEgOzlaS-GIDjz08VuZDodSYZH/preview",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1kGVUptrEPo8u8reKihvj9bAvzGX_4CtH",
       link: "bluecom-central",
       website: "https://bluecom.ai",
       linkTitle: "Bluecom Central",
@@ -128,6 +148,10 @@ const researchData: {
       count: 6,
       countTextColor: "#3DAAA4",
       image: deepReinforcementImage,
+      detailPageVideo:
+        "https://drive.google.com/file/d/1yV79qtzMpd-ZCX24Kw3WpXKLP-fJ4haO/preview",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1KZAQd_dwxaPm33eDEagQIbQJHUdcMK5s",
       link: "deep-reinforcement-learning",
       website: "",
       linkTitle: "Deep Learning",

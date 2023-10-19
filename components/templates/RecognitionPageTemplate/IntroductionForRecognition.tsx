@@ -2,20 +2,19 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 
 interface IntroductionForRecognitionProps {
-	title?: string;
-	content?: Array<{
-		
-		paragraph?: string;
-		list: {
-			type: string;
-			data: Array<{ title: string; description?: string }>;
-		};
-	}>;
+  title?: string;
+  content?: Array<{
+    paragraph?: string;
+    list: {
+      type: string;
+      data: Array<{ title: string; description?: string }>;
+    };
+  }>;
 }
 
 export default function IntroductionForRecognition({
-	title,
-	content,
+  title,
+  content,
 }: IntroductionForRecognitionProps) {
 	return (
 		<div className="max-w-[1600px] mx-auto">

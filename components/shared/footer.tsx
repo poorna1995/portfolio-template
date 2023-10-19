@@ -4,13 +4,13 @@ import React from "react";
 export default function Footer() {
 	return (
 		<footer
-			className="height-25"
+			className="h-25"
 			style={{
-				height: "24vh",
+				// height: "24vh",
 				backgroundColor: "#3F69FE",
 			}}
 		>
-			<div className="flex items-center justify-between py-4  max-w-[1600px] mx-auto">
+			<div className="flex items-center justify-between pt-4 max-w-[1600px] mx-auto">
 				<div className="flex-1 flex-col items-center justify-start py-0  max-w-[440px] mx-auto gap-8">
 					<Link href="/" className="text-3xl font-bold text-white">
 						P.
@@ -19,7 +19,7 @@ export default function Footer() {
 						A Lead full-stack Software engineer and designer and a
 						creative thinker with 6+ years of industrial experience.{" "}
 					</p>
-					<div className="flex items-center gap-2">
+					<div className="flex gap-2 pb-4 pbitems-center">
 						<Link href="/">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
