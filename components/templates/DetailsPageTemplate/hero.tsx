@@ -45,15 +45,23 @@ export default function DetailsPageHeroComponent({
         {/* image */}
         <div className="flex-1">
           {detailPageVideo ? (
-            <iframe
-              src={
-                detailPageVideo ||
-                "https://drive.google.com/file/d/1--452_FDub6_nfaRpUc_jFpmFoyuJsAZ/preview"
-              }
+            <ReactPlayer
               height={600}
-              width={800}
+              width={600}
+              url={
+                detailPageVideo ||
+                "https://res.cloudinary.com/du6wh3et2/video/upload/v1697777438/video/yku9gbldy0ddxvdbis8q.mp4"
+              }
+              light="/static/normal-sarong-0007.jpg"
+              controls={false}
+              playing={true}
+              loop={true}
+              // autoPlay={true}
+              // autoPlayAfterSrcChange={true}
+              muted={true}
+              playsinline={true}
               allow="autoplay"
-            ></iframe>
+            />
           ) : (
             <Image
               src={image || importedImage}
@@ -68,14 +76,15 @@ export default function DetailsPageHeroComponent({
           )}
         </div>
 
-        {/* <ReactPlayer
-            height={600}
-            width={600}
-            // width="530px"
-            // height="300px"
-            url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            light="/static/normal-sarong-0007.jpg"
-          /> */}
+        {/* <iframe
+          src={
+            detailPageVideo ||
+            "https://drive.google.com/file/d/1--452_FDub6_nfaRpUc_jFpmFoyuJsAZ/preview"
+          }
+          height={600}
+          width={800}
+          // allow="autoplay"
+        ></iframe> */}
       </div>
     </div>
   );

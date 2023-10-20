@@ -80,7 +80,7 @@ const productsPageData: {
       countTextColor: "#3F69FE",
       image: bluecomImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/1pK4aiyqMd8Uo4zd_TH-HNCGdJaiCMf9J/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697805240/video/bluecom.mp4",
       //   linkForWhitepaperDownload:
       //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
       link: "bluecom",
@@ -103,7 +103,7 @@ const productsPageData: {
       countTextColor: "#6C60BA",
       image: hivepathImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/17ER7QuSTlwIul5rzp8GNC-cn8A1LUDoI/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697777438/video/hivepath.mp4",
       //   linkForWhitepaperDownload:
       //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
       link: "hivepath",
@@ -126,7 +126,7 @@ const productsPageData: {
       countTextColor: "#739459",
       image: zelloImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/1cUTvQ-nkCJzqbF7k0js957Srmgr9UvqC/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697802880/video/zello.mp4",
       //   linkForWhitepaperDownload:
       //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
       link: "zello",
@@ -149,7 +149,7 @@ const productsPageData: {
       countTextColor: "#D0B160",
       image: calpadImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/1wPHXFtxGX-ZAR4pdVx6wxr5Wn4ZN998t/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697802949/video/calpad.mp4",
       //   linkForWhitepaperDownload:
       //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
       link: "calpad",
@@ -172,7 +172,7 @@ const productsPageData: {
       countTextColor: "#123578",
       image: bluecomCentralImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/1TfrLNjcmTL9Ea9i_uOJw2VM5y025ndmR/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803043/video/bluecom%20central.mp4",
       //   linkForWhitepaperDownload:
       //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
       link: "bluecom-central",
