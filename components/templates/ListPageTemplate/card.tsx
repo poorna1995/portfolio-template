@@ -20,11 +20,11 @@ export interface ProductCardProps {
 }
 
 export default function ProductCard({
-  ref,
+  // ref,
   data,
   pageType,
 }: {
-  ref: React.RefObject<HTMLHeadingElement>;
+  // ref: React.RefObject<HTMLHeadingElement>;
   data: ProductCardProps;
   pageType: string;
 }) {
@@ -61,7 +61,7 @@ export default function ProductCard({
             {count}
           </h1>
           <div>
-            <h3 className="text-6xl font-display" ref={ref}>
+            <h3 className="text-6xl font-display" >
               {title || "MultiChannel E-Commerce"}
             </h3>
             <p className="mt-4 mr-4 text-2xl font-default">
