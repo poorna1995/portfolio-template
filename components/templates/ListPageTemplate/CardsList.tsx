@@ -49,11 +49,6 @@ export default function CardsList({
             );
           })}
       </div>
-      <Link href="#first-section">My first section</Link>
-      <Link href="#second-section">My second section</Link>
-
-      <div id="first-section">SECTION 1</div>
-      <main id="second-section">SECTION 2</main>
     </div>
   );
 }
