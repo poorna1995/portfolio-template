@@ -15,12 +15,16 @@ export interface ProductCardProps {
   countTextColor: string;
   buttonTitle?: string;
   imageStyles?: {};
+  detailPageVideo?: string;
+  linkForWhitepaperDownload?: string;
 }
 
 export default function ProductCard({
+  // ref,
   data,
   pageType,
 }: {
+  // ref: React.RefObject<HTMLHeadingElement>;
   data: ProductCardProps;
   pageType: string;
 }) {
@@ -34,6 +38,8 @@ export default function ProductCard({
     backgroundColor,
     countTextColor,
     imageStyles,
+    detailPageVideo,
+    linkForWhitepaperDownload,
   } = data;
 
   const router = useRouter();
@@ -42,7 +48,7 @@ export default function ProductCard({
   };
 
   return (
-    <div className="flex flex-1 items-center max-w-[1700px] mx-auto">
+    <div className="flex flex-1 items-center max-w-[1700px] bg-[#FBFBFB] mx-auto">
       {/* text column */}
       <div className="items-center justify-center flex-1">
         <div className="flex px-1">
@@ -55,7 +61,7 @@ export default function ProductCard({
             {count}
           </h1>
           <div>
-            <h3 className="text-6xl font-display">
+            <h3 className="text-6xl font-display" >
               {title || "MultiChannel E-Commerce"}
             </h3>
             <p className="mt-4 mr-4 text-2xl font-default">
@@ -81,12 +87,42 @@ export default function ProductCard({
         <Image
           src={image || importedImage}
           width={700}
-          height={700}
+          height={400}
           alt="placeholder"
           className="ml-24 max-h-[900px] object-fit"
           style={{ ...imageStyles }}
         />
       </div>
+      {/* <div
+        className={`flex-1 py-36 `}
+        style={{
+          background: backgroundColor,
+        }}
+      >
+        {detailPageVideo ? (
+          <iframe
+            className="ml-5 max-h-[900px] object-fit"
+            src={
+              detailPageVideo ||
+              "https://drive.google.com/file/d/1--452_FDub6_nfaRpUc_jFpmFoyuJsAZ/preview"
+            }
+            height={600}
+            width={800}
+            allow="autoplay"
+          ></iframe>
+        ) : (
+          <Image
+            src={image || importedImage}
+            alt="placeholder"
+            height={800}
+            width={800}
+            className="ml-24 max-h-[900px] object-fit"
+            style={{
+              ...imageStyles,
+            }}
+          />
+        )}
+      </div> */}
     </div>
   );
 }

@@ -33,21 +33,17 @@ const EducationItem = ({
       </div>
       <div className="col-span-11">
         <div className="flex items-center justify-between">
-          <h3 className="text-[24px] font-medium font-display">{institution}</h3>{" "}
-          <span
-            className="text-lg font-medium text-[#535353]"
-          >
+          <h3 className="text-[24px] font-medium font-display">
+            {institution}
+          </h3>{" "}
+          <span className="text-lg font-medium text-[#535353]">
             {timePeriod}
           </span>
         </div>
-        <h4
-          className="text-base text-[18px] font-medium mb-1 mt-[4px] text-[#535353]"
-        >
+        <h4 className="text-base text-[18px] font-medium mb-1 mt-[4px] text-[#535353]">
           {degree}
         </h4>
-        <p
-          className="text-lg font-normal text-[#535353]"
-        >
+        <p className="text-lg font-normal text-[#535353]">
           <span className="font-bold text-lg">Courses:</span> {description}
         </p>
       </div>

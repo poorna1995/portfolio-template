@@ -23,12 +23,16 @@ const whitepapersPageData: {
     "My Comprehensive list of whitepapers across multiple areas of work.",
   listData: [
     {
-      title: "AI Compute-Technical Deep Dive",
+      title: "AI Compute-Technical Deep Drive",
       description: "Explore AI computing hardware and accelerators",
       backgroundColor: "#3F69FE",
       count: 1,
       countTextColor: "#3F69FE",
       image: aiCompute,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803298/video/whitepaper%20videos/nhti3thqwtcz4hatgibw.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1OM1XxhV3-zTVwinmmDhhyHyU12VF0Dx6",
       link: "ai-compute",
       website: "",
       linkTitle: "AI White Paper",
@@ -49,6 +53,10 @@ const whitepapersPageData: {
       count: 2,
       countTextColor: "#CC4B44",
       image: dataLoss,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803508/video/whitepaper%20videos/ow9vbob5b5xbthirl0pz.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1hzlgqrYlQE7M2LGsuZNjGsVObZIE638c",
       link: "data-loss-protection",
       website: "https://hivepath.io",
       linkTitle: "Data Loss Protection",
@@ -68,6 +76,10 @@ const whitepapersPageData: {
       count: 3,
       countTextColor: "#945980",
       image: multiChannel,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803541/video/whitepaper%20videos/mfulvfqemmcbjfcj2ndu.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1Q2SYr6OOyJUjY-5hJQ79xBYA8ST5FiZw",
       link: "multichannel-ecommerce",
       website: "",
       linkTitle: "MultiChannel E-Commerce",
@@ -87,6 +99,10 @@ const whitepapersPageData: {
       count: 4,
       countTextColor: "#591192",
       image: messagingApp,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803724/video/whitepaper%20videos/aw1yliosekvyfxpwrpxq.mov",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1w5ba_tiCHoRpe8uzxbDWCJwRN_Q2QYUL",
       link: "message-app",
       website: "",
       linkTitle: "Messaging App",
@@ -107,6 +123,10 @@ const whitepapersPageData: {
       count: 5,
       countTextColor: "#123578",
       image: transformation,
+      // detailPageVideo:
+      //   "https://drive.google.com/file/d/1EI940qBOJIIBnYF-xe21fRTU9MoaTSYT/preview",      video not available
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1EEeuxqvCbAIR2UpQhXWoCFbVNLVQLWH3",
       link: "transformers-architecture",
       website: "",
       linkTitle: "Transformers Architecture",
@@ -126,6 +146,10 @@ const whitepapersPageData: {
       count: 6,
       countTextColor: "#CD9047",
       image: dataTech,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803900/video/whitepaper%20videos/zvaourh3gv76ve1tzwf0.mov",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1lGjba5oaUbqrXeLSDjpbzk23FzmIDEh8",
       link: "data-tech-stack",
       website: "",
       linkTitle: "Data Tech Stack",

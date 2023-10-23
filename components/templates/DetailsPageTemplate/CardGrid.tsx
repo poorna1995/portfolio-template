@@ -3,16 +3,16 @@ import OtherItemsCard from "./card";
 import { ListProductCardProps } from "@/constants/pages/products";
 
 interface CardGridProps {
-	title?: string;
-	data: ListProductCardProps[];
-	pageType: string;
+  title?: string;
+  data: ListProductCardProps[];
+  pageType: string;
 }
 
 export default function CardGrid({ title, data, pageType }: CardGridProps) {
 	return (
 		<div className="max-w-[1600px] mx-auto">
-			<h1 className="text-4xl mt-4  font-display">{title || "Other Products"}</h1>
-			<div className="grid grid-cols-3 py-8 gap-10">
+			<h1 className="mt-4 text-4xl font-display">{title || "Other Products"}</h1>
+			<div className="grid grid-cols-3 gap-10 py-8">
 				{data.map((item) => {
 					return (
 						<OtherItemsCard

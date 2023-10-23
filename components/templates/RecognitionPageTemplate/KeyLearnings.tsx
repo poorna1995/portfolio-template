@@ -19,9 +19,14 @@ export default function KeyLearnings({
     <div className="max-w-[1600px] mx-auto">
       {content?.map((item, index) => {
         return (
-          <div key={index} className="grid items-center grid-cols-2 gap-8 my-32">
+          <div
+            key={index}
+            className="grid items-center grid-cols-2 gap-8 my-32"
+          >
             <div>
-              <h1 className="text-5xl  font-display font-medium">Key Learnings</h1>
+              <h1 className="text-5xl  font-display font-medium">
+                Key Learnings
+              </h1>
               <p
                 key={item.paragraph}
                 className="text-[21px] leading-8 mt-4 pr-14 font-default"

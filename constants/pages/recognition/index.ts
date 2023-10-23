@@ -27,6 +27,8 @@ const recognitionData: {
       count: 1,
       countTextColor: "#6C60BA",
       image: bestEmployeeAward,
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1goekxXnbvnYgwXan2g4oXhqju4eleipA",
       link: "best-employee-award",
       website: "",
       linkTitle: "",

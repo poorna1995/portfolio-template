@@ -35,6 +35,7 @@ export default function RecognitionPageTemplate({
         description={pageInfo?.description}
         buttonTitle={pageInfo?.buttonTitle}
         image={pageInfo?.image as StaticImageData}
+        linkForWhitepaperDownload={pageInfo?.linkForWhitepaperDownload}
       />
       <div
         className={
