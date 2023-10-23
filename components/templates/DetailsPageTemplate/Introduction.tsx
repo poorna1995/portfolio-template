@@ -1,7 +1,10 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import React from "react";
 
 interface IntroductionProps {
+  linkForWhitepaperDownload?: string;
   title?: string;
   content?: Array<{
     paragraph?: string;
@@ -15,7 +18,12 @@ interface IntroductionProps {
 export default function IntroductionComponent({
   title,
   content,
+  linkForWhitepaperDownload,
 }: IntroductionProps) {
+  const handleDownloadWhitepaper = () => {
+    window.open(linkForWhitepaperDownload || "", "_blank");
+  };
+
   return (
     <div className="max-w-[1600px] mx-auto">
       <h1 className="mt-12 text-4xl font-display">{title}</h1>
@@ -44,7 +52,10 @@ export default function IntroductionComponent({
           </div>
         );
       })}
-      <Button className="mt-8 px-6  mb-16 text-[18px]">
+      <Button
+        className="mt-8 px-6  mb-16 text-[18px]"
+        onClick={handleDownloadWhitepaper}
+      >
         Download Whitepaper
       </Button>
     </div>
