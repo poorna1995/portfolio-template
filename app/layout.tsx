@@ -6,22 +6,22 @@ import { sentient, supreme } from "@/styles/fonts";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-	title: "Portfolio",
-	description: "Portfolio project",
+  title: "Portfolio",
+  description: "Portfolio project",
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<html lang="en">
-			<body className={cn(supreme.variable, sentient.variable)}>
-				<Header />
-				{children}
-				<Footer />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={cn(supreme.variable, sentient.variable)}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }

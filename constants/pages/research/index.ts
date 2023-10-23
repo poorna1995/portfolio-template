@@ -30,11 +30,21 @@ const researchData: {
       count: 1,
       countTextColor: "#6C60BA",
       image: computerVisionImage,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804061/video/Research%20videos/idrb8oxm4wuy6dodg2gq.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
       link: "computer-vision",
       website: "",
       linkTitle: "Computer Vision",
       timeline: "",
       detailsPageData: computerVisionData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "AI Inference",
@@ -44,11 +54,21 @@ const researchData: {
       count: 2,
       countTextColor: "#945980",
       image: aiInerenceImage,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804084/video/Research%20videos/bqoptsisifri7jdsbop0.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1NHluUF0ZJbFbnV7WKm6ht3v-Z_9t5-QF",
       link: "ai-inference",
       website: "",
       linkTitle: "AI Inference",
       timeline: "",
       detailsPageData: aiInerenceData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Transformers Variants – Technical Overview",
@@ -58,11 +78,21 @@ const researchData: {
       count: 3,
       countTextColor: "#BAD060",
       image: transformersImage,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804207/video/Research%20videos/fhaia28fe0m5hasymurm.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1tzAqBaUNeaYLJ73j2SZUMEmoXkL7765P",
       link: "transformers",
       website: "",
       linkTitle: "Transformers",
       timeline: "",
       detailsPageData: transformersData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Chat Bot Using Deep Learning - LSTM, RNN",
@@ -71,11 +101,21 @@ const researchData: {
       count: 4,
       countTextColor: "#79C7FF",
       image: chatBotImage,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804242/video/Research%20videos/urdzcs4cecsqhyhjobpo.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/18mzYvtlR10yNWzoJYHCeW0p2-Jl1v5mU",
       link: "chat-bot",
       website: "",
       linkTitle: "Chat Bot",
       timeline: "",
       detailsPageData: chatBotData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Topic Modelling using NLP",
@@ -85,11 +125,21 @@ const researchData: {
       count: 5,
       countTextColor: "#123578",
       image: topicModelingImage,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804356/video/Research%20videos/wfpqyqwgoietajsvqwgl.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1kGVUptrEPo8u8reKihvj9bAvzGX_4CtH",
       link: "bluecom-central",
       website: "https://bluecom.ai",
       linkTitle: "Bluecom Central",
       timeline: "",
       detailsPageData: topicModelingData,
+      imageStyles: {
+        maxHeight: "600px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
+      },
     },
     {
       title: "Deep Reinforcement Learning",
@@ -98,6 +148,10 @@ const researchData: {
       count: 6,
       countTextColor: "#3DAAA4",
       image: deepReinforcementImage,
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804434/video/Research%20videos/qcqnf6qxyufgu1pieq8w.mp4",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1KZAQd_dwxaPm33eDEagQIbQJHUdcMK5s",
       link: "deep-reinforcement-learning",
       website: "",
       linkTitle: "Deep Learning",
@@ -105,7 +159,9 @@ const researchData: {
       detailsPageData: deepReinforcementData,
       imageStyles: {
         maxHeight: "600px",
-        maxWidth: "400px",
+        maxWidth: "600px",
+        fitObject: "fill",
+        align: "center",
       },
     },
   ],
