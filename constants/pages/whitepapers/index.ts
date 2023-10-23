@@ -30,7 +30,7 @@ const whitepapersPageData: {
       countTextColor: "#3F69FE",
       image: aiCompute,
       detailPageVideo:
-        "https://drive.google.com/file/d/1NR7Q5-bo5H0FGTpp05hYTZM6dmFXZAHU/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803298/video/whitepaper%20videos/nhti3thqwtcz4hatgibw.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1OM1XxhV3-zTVwinmmDhhyHyU12VF0Dx6",
       link: "ai-compute",
@@ -54,7 +54,7 @@ const whitepapersPageData: {
       countTextColor: "#CC4B44",
       image: dataLoss,
       detailPageVideo:
-        "https://drive.google.com/file/d/1--452_FDub6_nfaRpUc_jFpmFoyuJsAZ/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803508/video/whitepaper%20videos/ow9vbob5b5xbthirl0pz.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1hzlgqrYlQE7M2LGsuZNjGsVObZIE638c",
       link: "data-loss-protection",
@@ -77,7 +77,7 @@ const whitepapersPageData: {
       countTextColor: "#945980",
       image: multiChannel,
       detailPageVideo:
-        "https://drive.google.com/file/d/1lyXLTn5i6_3wO7N6-hK_pRez4KZSD1B1/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803541/video/whitepaper%20videos/mfulvfqemmcbjfcj2ndu.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1Q2SYr6OOyJUjY-5hJQ79xBYA8ST5FiZw",
       link: "multichannel-ecommerce",
@@ -100,7 +100,7 @@ const whitepapersPageData: {
       countTextColor: "#591192",
       image: messagingApp,
       detailPageVideo:
-        "https://drive.google.com/file/d/1BgPUvE7EJKvBieMWFM8PJ_xoWPOK8zky/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803724/video/whitepaper%20videos/aw1yliosekvyfxpwrpxq.mov",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1w5ba_tiCHoRpe8uzxbDWCJwRN_Q2QYUL",
       link: "message-app",
@@ -147,7 +147,7 @@ const whitepapersPageData: {
       countTextColor: "#CD9047",
       image: dataTech,
       detailPageVideo:
-        "https://drive.google.com/file/d/1EI940qBOJIIBnYF-xe21fRTU9MoaTSYT/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803900/video/whitepaper%20videos/zvaourh3gv76ve1tzwf0.mov",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1lGjba5oaUbqrXeLSDjpbzk23FzmIDEh8",
       link: "data-tech-stack",

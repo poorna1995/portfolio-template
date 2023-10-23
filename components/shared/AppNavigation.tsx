@@ -58,8 +58,8 @@ export function AppNavigation({
 
               <NavigationMenuItem key={item.title}>
                 <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
-                <NavigationMenuContent className="box-border ">
-                  <ul className="grid w-[320px]  p-4  md:grid-cols-1 lg:w-[400px] ">
+                <NavigationMenuContent className="box-border">
+                  <ul className="grid w-[320px]  p-4  md:grid-cols-1 lg:w-[320px]">
                     {item.subMenu.map((component) => (
                       <ListItem
                         key={component.title}

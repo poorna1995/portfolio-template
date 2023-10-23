@@ -31,7 +31,7 @@ const researchData: {
       countTextColor: "#6C60BA",
       image: computerVisionImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/1J2z3RP298T4L0805i1oM19yBTOp279zl/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804061/video/Research%20videos/idrb8oxm4wuy6dodg2gq.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
       link: "computer-vision",
@@ -55,7 +55,7 @@ const researchData: {
       countTextColor: "#945980",
       image: aiInerenceImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/124oCgCCD66JMCxKCgqcd72TMvNu0Pwrf/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804084/video/Research%20videos/bqoptsisifri7jdsbop0.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1NHluUF0ZJbFbnV7WKm6ht3v-Z_9t5-QF",
       link: "ai-inference",
@@ -79,7 +79,7 @@ const researchData: {
       countTextColor: "#BAD060",
       image: transformersImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/160BZqTOYdIEplucgzVoQKPaHVdPfunTv/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804207/video/Research%20videos/fhaia28fe0m5hasymurm.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1tzAqBaUNeaYLJ73j2SZUMEmoXkL7765P",
       link: "transformers",
@@ -102,7 +102,7 @@ const researchData: {
       countTextColor: "#79C7FF",
       image: chatBotImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/1hUTROka57DPEgVTKbHLivVIwcEgQVQIs/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804242/video/Research%20videos/urdzcs4cecsqhyhjobpo.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/18mzYvtlR10yNWzoJYHCeW0p2-Jl1v5mU",
       link: "chat-bot",
@@ -126,7 +126,7 @@ const researchData: {
       countTextColor: "#123578",
       image: topicModelingImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/1r_pYjpxEgOzlaS-GIDjz08VuZDodSYZH/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804356/video/Research%20videos/wfpqyqwgoietajsvqwgl.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1kGVUptrEPo8u8reKihvj9bAvzGX_4CtH",
       link: "bluecom-central",
@@ -149,7 +149,7 @@ const researchData: {
       countTextColor: "#3DAAA4",
       image: deepReinforcementImage,
       detailPageVideo:
-        "https://drive.google.com/file/d/1yV79qtzMpd-ZCX24Kw3WpXKLP-fJ4haO/preview",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804434/video/Research%20videos/qcqnf6qxyufgu1pieq8w.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1KZAQd_dwxaPm33eDEagQIbQJHUdcMK5s",
       link: "deep-reinforcement-learning",
