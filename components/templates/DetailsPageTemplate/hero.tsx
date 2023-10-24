@@ -87,7 +87,7 @@ export default function DetailsPageHeroComponent({
               playsInline
               loop
               muted
-              controls
+              controls={false}
               // alt="All the devices"
               src={
                 detailPageVideo ||
@@ -99,12 +99,8 @@ export default function DetailsPageHeroComponent({
             <Image
               src={image || importedImage}
               alt="placeholder"
-              height={600}
-              width={600}
               className="ml-24 max-h-[900px] max-w-[600px] object-fit"
-              style={{
-                ...imageStyles,
-              }}
+              style={{ ...imageStyles }}
             />
           )}
         </div>

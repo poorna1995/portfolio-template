@@ -24,11 +24,13 @@ const researchData: {
   listData: [
     {
       title: "Computer Vision Application - Solution Design",
+      buttonTitle: "View Research Paper",
       description:
         "Architecture for real-world computer vision solutions, offering automated metric extraction and insights for businesses, particularly in industries like Retail, Quick Service Retail (QSR), and OEMs.",
       backgroundColor: "#6C60BA",
       count: 1,
       countTextColor: "#6C60BA",
+      countBackgroundColor: "#FBFBFB",
       image: computerVisionImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804061/video/Research%20videos/idrb8oxm4wuy6dodg2gq.mp4",
@@ -48,11 +50,13 @@ const researchData: {
     },
     {
       title: "AI Inference",
+      buttonTitle: "View Research Paper",
       description:
         "AI Inference is a crucial step for building produc4 on ready AI models.",
       backgroundColor: "#945980",
       count: 2,
       countTextColor: "#945980",
+      countBackgroundColor: "",
       image: aiInerenceImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804084/video/Research%20videos/bqoptsisifri7jdsbop0.mp4",
@@ -72,11 +76,13 @@ const researchData: {
     },
     {
       title: "Transformers Variants – Technical Overview",
+      buttonTitle: "View Research Paper",
       description:
         "Transformer architecture has been a pivotal discovery in past five years of deep learning.",
       backgroundColor: "#BAD060",
       count: 3,
       countTextColor: "#BAD060",
+      countBackgroundColor: "#FBFBFB",
       image: transformersImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804207/video/Research%20videos/fhaia28fe0m5hasymurm.mp4",
@@ -96,10 +102,12 @@ const researchData: {
     },
     {
       title: "Chat Bot Using Deep Learning - LSTM, RNN",
+      buttonTitle: "View Research Paper",
       description: "Tackling Question Answering using LSTM architecture",
       backgroundColor: "#79C7FF",
       count: 4,
       countTextColor: "#79C7FF",
+      countBackgroundColor: "",
       image: chatBotImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804242/video/Research%20videos/urdzcs4cecsqhyhjobpo.mp4",
@@ -119,19 +127,21 @@ const researchData: {
     },
     {
       title: "Topic Modelling using NLP",
+      buttonTitle: "View Research Paper",
       description:
         "Transformer architecture has been a pivotal discovery in past five years of deep learning.",
       backgroundColor: "#123578",
       count: 5,
       countTextColor: "#123578",
+      countBackgroundColor: "#FBFBFB",
       image: topicModelingImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804356/video/Research%20videos/wfpqyqwgoietajsvqwgl.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1kGVUptrEPo8u8reKihvj9bAvzGX_4CtH",
-      link: "bluecom-central",
-      website: "https://bluecom.ai",
-      linkTitle: "Bluecom Central",
+      link: "topic-modelling",
+      website: "",
+      linkTitle: "Topic Modelling",
       timeline: "",
       detailsPageData: topicModelingData,
       imageStyles: {
@@ -143,10 +153,12 @@ const researchData: {
     },
     {
       title: "Deep Reinforcement Learning",
+      buttonTitle: "View Research Paper",
       description: "ackling Question Answering using LSTM architecture",
       backgroundColor: "#3DAAA4",
       count: 6,
       countTextColor: "#3DAAA4",
+      countBackgroundColor: "",
       image: deepReinforcementImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804434/video/Research%20videos/qcqnf6qxyufgu1pieq8w.mp4",

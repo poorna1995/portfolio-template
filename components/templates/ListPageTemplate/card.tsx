@@ -13,6 +13,7 @@ export interface ProductCardProps {
   image?: StaticImageData | string;
   backgroundColor: string;
   countTextColor: string;
+  countBackgroundColor: string;
   buttonTitle?: string;
   imageStyles?: {};
   detailPageVideo?: string;
@@ -37,6 +38,7 @@ export default function ProductCard({
     image,
     backgroundColor,
     countTextColor,
+    countBackgroundColor,
     imageStyles,
     detailPageVideo,
     linkForWhitepaperDownload,
@@ -48,7 +50,12 @@ export default function ProductCard({
   };
 
   return (
-    <div className="flex flex-1 items-center max-w-[1700px] bg-[#FBFBFB] mx-auto">
+    <div
+      className="flex flex-1 items-center max-w-[1700px] bg-[#FBFBFB] mx-auto"
+      style={{
+        backgroundColor: countBackgroundColor || "white",
+      }}
+    >
       {/* text column */}
       <div className="items-center justify-center flex-1">
         <div className="flex px-1">
@@ -61,7 +68,7 @@ export default function ProductCard({
             {count}
           </h1>
           <div>
-            <h3 className="text-6xl font-display" >
+            <h3 className="text-6xl font-display">
               {title || "MultiChannel E-Commerce"}
             </h3>
             <p className="mt-4 mr-4 text-2xl font-default">

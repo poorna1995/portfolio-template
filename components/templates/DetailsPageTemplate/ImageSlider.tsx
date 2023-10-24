@@ -33,8 +33,8 @@ export default function ImageSlider({
               src={(item.src as string) || (item.src as StaticImageData)}
               alt={"product image"}
               key={item.src as string}
-              width={500}
-              height={500}
+              width={450}
+              height={450}
               className="hero-image-slider"
             />
           );

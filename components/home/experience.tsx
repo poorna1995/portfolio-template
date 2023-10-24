@@ -6,31 +6,23 @@ import HivePathlogo from "@/public/assets/aboutme/hivepath-logo.png";
 import CalpadLogo from "@/public/assets/aboutme/calpad-logo.png";
 import ZelloLogo from "@/public/assets/aboutme/zello-logo.png";
 import NvipaniTechnology from "@/public/assets/aboutme/nvipani-technology-logo.png";
+import styler from "@/public/assets/aboutme/styler.png";
+import crafterLogo from "@/public/assets/aboutme/crafter-logo.png";
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 
-export default function ExperienceComponent({
-  pageType,
-}: {
-  pageType: string;
-}) {
+export default function ExperienceComponent({}) {
   return (
     <div className="my-8 border-t border-black">
       <h2 className="my-12 text-3xl font-medium font-display">Experience</h2>
       {data.map((item, index) => {
-        return <ExperienceCard data={item} key={index} pageType={pageType} />;
+        return <ExperienceCard data={item} key={index} />;
       })}
     </div>
   );
 }
 
-const ExperienceCard = ({
-  data,
-  pageType,
-}: {
-  data: ExperienceCardProps;
-  pageType: string;
-}) => {
+const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
   const {
     companyLogo,
     companyName,
@@ -228,7 +220,7 @@ const data: ExperienceCardProps[] = [
         description: "E-commerce SaaS for streamlined product life cycle",
       },
       {
-        logo: "",
+        logo: styler,
         title: "Styler",
         link: "styler",
         description: "E-commerce SaaS for streamlined product life cycle",
@@ -250,7 +242,7 @@ const data: ExperienceCardProps[] = [
     ],
   },
   {
-    companyLogo: NvipaniTechnology,
+    companyLogo: crafterLogo,
     companyName: "Crafter",
     jobRole: "Front-End Intern",
     location: "Bangalore, India",
