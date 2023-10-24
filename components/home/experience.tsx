@@ -9,28 +9,18 @@ import NvipaniTechnology from "@/public/assets/aboutme/nvipani-technology-logo.p
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 
-export default function ExperienceComponent({
-  pageType,
-}: {
-  pageType: string;
-}) {
+export default function ExperienceComponent({}) {
   return (
     <div className="my-8 border-t border-black">
       <h2 className="my-12 text-3xl font-medium font-display">Experience</h2>
       {data.map((item, index) => {
-        return <ExperienceCard data={item} key={index} pageType={pageType} />;
+        return <ExperienceCard data={item} key={index} />;
       })}
     </div>
   );
 }
 
-const ExperienceCard = ({
-  data,
-  pageType,
-}: {
-  data: ExperienceCardProps;
-  pageType: string;
-}) => {
+const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
   const {
     companyLogo,
     companyName,
