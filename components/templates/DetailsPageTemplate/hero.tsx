@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { Ref, useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 import Image, { StaticImageData } from "next/image";
 import importedImage from "@/public/assets/whitepapers/ai-and-compute.png";
 import { Button } from "@/components/ui/button";
+import { ReactPlayerProps } from "react-player";
 
 export default function DetailsPageHeroComponent({
   title,
@@ -23,9 +24,27 @@ export default function DetailsPageHeroComponent({
   buttonTitle?: string;
   linkForWhitepaperDownload?: string;
 }) {
+  interface CustomReactPlayerProps extends ReactPlayerProps {
+    play: () => void;
+  }
+
   const handleDownloadWhitepaper = () => {
     window.open(linkForWhitepaperDownload || "", "_blank");
   };
+
+  const videoEl = useRef<HTMLVideoElement>(null);
+
+  const attemptPlay = () => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch((error: Error) => {
+        console.error("Error attempting to play", error);
+      });
+  };
+
+  useEffect(() => {
+    attemptPlay();
+  }, []);
 
   return (
     <div className="w-full p-24 bg-black">
@@ -45,22 +64,36 @@ export default function DetailsPageHeroComponent({
         {/* image */}
         <div className="flex-1">
           {detailPageVideo ? (
-            <ReactPlayer
-              height={600}
-              width={600}
-              url={
+            // <ReactPlayer
+            //   id="video"
+            //   height={600}
+            //   width={600}
+            //   url={
+            //     detailPageVideo ||
+            //     "https://res.cloudinary.com/du6wh3et2/video/upload/v1697777438/video/yku9gbldy0ddxvdbis8q.mp4"
+            //   }
+            //   light="/static/normal-sarong-0007.jpg"
+            //   controls={false}
+            //   playing={true}
+            //   loop={true}
+            //   autoPlay={true}
+            //   autoPlayAfterSrcChange={true}
+            //   muted={true}
+            //   playsinline={true}
+            //   allow="autoplay"
+            // />
+            <video
+              style={{ maxWidth: "100%", width: "600px", margin: "0 auto" }}
+              playsInline
+              loop
+              muted
+              controls
+              // alt="All the devices"
+              src={
                 detailPageVideo ||
                 "https://res.cloudinary.com/du6wh3et2/video/upload/v1697777438/video/yku9gbldy0ddxvdbis8q.mp4"
               }
-              light="/static/normal-sarong-0007.jpg"
-              controls={false}
-              playing={true}
-              loop={true}
-              // autoPlay={true}
-              // autoPlayAfterSrcChange={true}
-              muted={true}
-              playsinline={true}
-              allow="autoplay"
+              ref={videoEl}
             />
           ) : (
             <Image

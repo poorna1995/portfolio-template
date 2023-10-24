@@ -5,11 +5,11 @@ import image from "@/public/home-hero.png";
 export default function HomePageHeroComponent() {
   return (
     <div className="grid grid-cols-12">
-      <div className="col-span-4">
+      {/* <div className="col-span-4">
         <Image src={image} alt="my image" width={600} height={600} />
-      </div>
+      </div> */}
       <div className="col-span-8 p-24">
-        <h1 className="text-6xl leading-21 font-display font-medium">
+        <h1 className="text-6xl font-medium leading-21 font-display">
           I create unique solutions that improve people&apos;s lives.
         </h1>
         <p className="mt-4 text-lg font-normal">
@@ -38,7 +38,7 @@ export default function HomePageHeroComponent() {
           business & technology stakeholders.
         </p>
 
-        <div className="flex pt-3 gap-2">
+        <div className="flex gap-2 pt-3">
           <svg
             width="42"
             height="42"
