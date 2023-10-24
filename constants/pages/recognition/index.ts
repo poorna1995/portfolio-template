@@ -28,7 +28,8 @@ const recognitionData: {
       countTextColor: "#6C60BA",
       image: bestEmployeeAward,
       linkForWhitepaperDownload:
-        "https://drive.google.com/file/d/1goekxXnbvnYgwXan2g4oXhqju4eleipA",
+      "https://drive.google.com/drive/u/4/folders/1a3UCxoBMQVyIneotKqiZIf0D9uOBbu0H",
+        // "https://drive.google.com/file/d/1goekxXnbvnYgwXan2g4oXhqju4eleipA",
       link: "best-employee-award",
       website: "",
       linkTitle: "",
@@ -43,6 +44,7 @@ const recognitionData: {
       count: 1,
       countTextColor: "#6C60BA",
       image: worldQuantImage,
+      linkForWhitepaperDownload: "https://drive.google.com/file/d/1cIcgq0y1v7wdjuQj6qf5l8vOWevLV8ML/view",
       link: "worldquant",
       website: "",
       linkTitle: "",

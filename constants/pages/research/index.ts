@@ -24,6 +24,7 @@ const researchData: {
   listData: [
     {
       title: "Computer Vision Application - Solution Design",
+      buttonTitle: "View Research Paper",
       description:
         "Architecture for real-world computer vision solutions, offering automated metric extraction and insights for businesses, particularly in industries like Retail, Quick Service Retail (QSR), and OEMs.",
       backgroundColor: "#6C60BA",
@@ -48,6 +49,7 @@ const researchData: {
     },
     {
       title: "AI Inference",
+      buttonTitle: "View Research Paper",
       description:
         "AI Inference is a crucial step for building produc4 on ready AI models.",
       backgroundColor: "#945980",
@@ -72,6 +74,7 @@ const researchData: {
     },
     {
       title: "Transformers Variants – Technical Overview",
+      buttonTitle: "View Research Paper",
       description:
         "Transformer architecture has been a pivotal discovery in past five years of deep learning.",
       backgroundColor: "#BAD060",
@@ -96,6 +99,7 @@ const researchData: {
     },
     {
       title: "Chat Bot Using Deep Learning - LSTM, RNN",
+      buttonTitle: "View Research Paper",
       description: "Tackling Question Answering using LSTM architecture",
       backgroundColor: "#79C7FF",
       count: 4,
@@ -119,6 +123,7 @@ const researchData: {
     },
     {
       title: "Topic Modelling using NLP",
+      buttonTitle: "View Research Paper",
       description:
         "Transformer architecture has been a pivotal discovery in past five years of deep learning.",
       backgroundColor: "#123578",
@@ -129,9 +134,9 @@ const researchData: {
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804356/video/Research%20videos/wfpqyqwgoietajsvqwgl.mp4",
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1kGVUptrEPo8u8reKihvj9bAvzGX_4CtH",
-      link: "bluecom-central",
-      website: "https://bluecom.ai",
-      linkTitle: "Bluecom Central",
+      link: "topic-modelling",
+      website: "",
+      linkTitle: "Topic Modelling",
       timeline: "",
       detailsPageData: topicModelingData,
       imageStyles: {
@@ -143,6 +148,7 @@ const researchData: {
     },
     {
       title: "Deep Reinforcement Learning",
+      buttonTitle: "View Research Paper",
       description: "ackling Question Answering using LSTM architecture",
       backgroundColor: "#3DAAA4",
       count: 6,

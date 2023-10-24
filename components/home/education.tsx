@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import universityLogo from "@/public/assets/aboutme/university-logo.png";
-import codeAcademyLogo from "@/public/assets/aboutme/code-academy-logo.png";
+import codeAcademyLogo from "@/public/assets/aboutme/code-acedamy-logo.png";
 
 export default function Education() {
   return (
@@ -44,7 +44,7 @@ const EducationItem = ({
           {degree}
         </h4>
         <p className="text-lg font-normal text-[#535353]">
-          <span className="font-bold text-lg">Courses:</span> {description}
+          <span className="text-lg font-bold">Courses:</span> {description}
         </p>
       </div>
     </div>

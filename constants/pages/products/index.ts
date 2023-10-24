@@ -28,7 +28,10 @@ export interface ListProductCardProps extends ProductCardProps {
         paragraph?: string;
         list: {
           type: string;
-          data: Array<{ title: string; description?: string }>;
+          data: Array<{
+            title: string;
+            description?: string;
+          }>;
         };
       }>;
     };
@@ -74,6 +77,7 @@ const productsPageData: {
   listData: [
     {
       title: "Bluecom.ai",
+      buttonTitle: "View Product",
       description: "E-commerce SaaS for streamlined product life cycle",
       backgroundColor: "#3F69FE",
       count: 1,
@@ -81,8 +85,7 @@ const productsPageData: {
       image: bluecomImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697805240/video/bluecom.mp4",
-      //   linkForWhitepaperDownload:
-      //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
+      linkForWhitepaperDownload: "https://bluecom.ai",
       link: "bluecom",
       website: "https://bluecom.ai",
       linkTitle: "Bluecom",
@@ -97,15 +100,15 @@ const productsPageData: {
     },
     {
       title: "Hivepath.io",
+      buttonTitle: "View Product",
       description: "Professional networking Platform.",
       backgroundColor: "#6C60BA",
       count: 2,
       countTextColor: "#6C60BA",
       image: hivepathImage,
       detailPageVideo:
-        "https://res.cloudinary.com/du6wh3et2/video/upload/v1697777438/video/hivepath.mp4",
-      //   linkForWhitepaperDownload:
-      //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1698136131/video/hivepath.mp4",
+      linkForWhitepaperDownload: "https://hivepath.io",
       link: "hivepath",
       website: "https://hivepath.io",
       linkTitle: "Hivepath",
@@ -120,6 +123,7 @@ const productsPageData: {
     },
     {
       title: "Zello.live",
+      buttonTitle: "View Product",
       description: "Andriod photo widget sharing platform",
       backgroundColor: "#739459",
       count: 3,
@@ -127,8 +131,7 @@ const productsPageData: {
       image: zelloImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697802880/video/zello.mp4",
-      //   linkForWhitepaperDownload:
-      //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
+      linkForWhitepaperDownload: "https://zello.live",
       link: "zello",
       website: "https://zello.live",
       linkTitle: "Zello",
@@ -143,6 +146,7 @@ const productsPageData: {
     },
     {
       title: "Calpad.co",
+      buttonTitle: "View Product",
       description: "A calendar booking platform for the professionals",
       backgroundColor: "#D0B160",
       count: 4,
@@ -150,8 +154,7 @@ const productsPageData: {
       image: calpadImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697802949/video/calpad.mp4",
-      //   linkForWhitepaperDownload:
-      //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
+      linkForWhitepaperDownload: "https://calpad.vercel.app",
       link: "calpad",
       website: "https://calpad.vercel.app",
       linkTitle: "Calpad",
@@ -166,6 +169,7 @@ const productsPageData: {
     },
     {
       title: "Bluecom.central",
+      buttonTitle: "View Product",
       description: "E-commerce SaaS - Lists of stores",
       backgroundColor: "#123578",
       count: 5,
@@ -173,8 +177,7 @@ const productsPageData: {
       image: bluecomCentralImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803043/video/bluecom%20central.mp4",
-      //   linkForWhitepaperDownload:
-      //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
+      linkForWhitepaperDownload: "https://bluecom.ai",
       link: "bluecom-central",
       website: "https://bluecom.ai",
       linkTitle: "Bluecom Central",
@@ -189,16 +192,16 @@ const productsPageData: {
     },
     {
       title: "Styler",
+      buttonTitle: "View Product",
       description:
         "Transformer architecture has been a pivotal discovery in past five years of deep learning.",
       backgroundColor: "#591192",
       count: 6,
       countTextColor: "#591192",
       image: stylerImage,
-      //   detailPageVideo:
-      //     "https://drive.google.com/file/d/1qywLgTA6H5NVme4yIZEWgAGgzbtwLxFY/preview",                   this is quantum hub link
-      //   linkForWhitepaperDownload:
-      //     "https://drive.google.com/file/d/1AwYDQtF2p7fPQpuI1ZgKA2mzT_KdIW7g",
+      detailPageVideo:
+        "https://res.cloudinary.com/du6wh3et2/video/upload/v1698135915/video/styler.mp4",
+      linkForWhitepaperDownload: "https://booking.hivepath.io/anoos",
       link: "styler",
       website: "https://booking.hivepath.io/anoos",
       linkTitle: "Styler",
@@ -210,6 +213,8 @@ const productsPageData: {
         maxWidth: "300px",
         fitObject: "fill",
         align: "center",
+        marginLeft: "auto",
+        margin: "auto",
       },
     },
   ],

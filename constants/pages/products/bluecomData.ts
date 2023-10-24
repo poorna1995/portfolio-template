@@ -1,5 +1,8 @@
-import bluecomImage from "@/public/assets/products/bluecom.png";
-import mediaBluecomImage from "@/public/assets/products/media-bluecom-image.png";
+import bluecomImage1 from "@/public/assets/products/bluecom-image-1.png";
+import bluecomImage2 from "@/public/assets/products/bluecom-image-2.png";
+import bluecomImage3 from "@/public/assets/products/bluecom-image-3.png";
+import bluecomImage4 from "@/public/assets/products/bluecom-image-4.png";
+import bluecomImage5 from "@/public/assets/products/bluecom-image-5.png";
 
 const bluecomData = {
   introData: {
@@ -73,10 +76,19 @@ const bluecomData = {
   productMedia: {
     image: [
       {
-        src: bluecomImage,
+        src: bluecomImage1,
       },
       {
-        src: mediaBluecomImage,
+        src: bluecomImage2,
+      },
+      {
+        src: bluecomImage3,
+      },
+      {
+        src: bluecomImage4,
+      },
+      {
+        src: bluecomImage5,
       },
     ],
   },

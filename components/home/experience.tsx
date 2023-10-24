@@ -6,6 +6,8 @@ import HivePathlogo from "@/public/assets/aboutme/hivepath-logo.png";
 import CalpadLogo from "@/public/assets/aboutme/calpad-logo.png";
 import ZelloLogo from "@/public/assets/aboutme/zello-logo.png";
 import NvipaniTechnology from "@/public/assets/aboutme/nvipani-technology-logo.png";
+import styler from "@/public/assets/aboutme/styler.png";
+import crafterLogo from "@/public/assets/aboutme/crafter-logo.png";
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 
@@ -218,7 +220,7 @@ const data: ExperienceCardProps[] = [
         description: "E-commerce SaaS for streamlined product life cycle",
       },
       {
-        logo: "",
+        logo: styler,
         title: "Styler",
         link: "styler",
         description: "E-commerce SaaS for streamlined product life cycle",
@@ -240,7 +242,7 @@ const data: ExperienceCardProps[] = [
     ],
   },
   {
-    companyLogo: NvipaniTechnology,
+    companyLogo: crafterLogo,
     companyName: "Crafter",
     jobRole: "Front-End Intern",
     location: "Bangalore, India",
