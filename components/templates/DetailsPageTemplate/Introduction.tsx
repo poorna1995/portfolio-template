@@ -5,6 +5,7 @@ import React from "react";
 
 interface IntroductionProps {
   linkForWhitepaperDownload?: string;
+  buttonTitle?: string;
   title?: string;
   content?: Array<{
     paragraph?: string;
@@ -19,6 +20,7 @@ export default function IntroductionComponent({
   title,
   content,
   linkForWhitepaperDownload,
+  buttonTitle,
 }: IntroductionProps) {
   const handleDownloadWhitepaper = () => {
     window.open(linkForWhitepaperDownload || "", "_blank");
@@ -56,7 +58,7 @@ export default function IntroductionComponent({
         className="mt-8 px-6  mb-16 text-[18px]"
         onClick={handleDownloadWhitepaper}
       >
-        Download Whitepaper
+        {buttonTitle || "Download Whitepaper"}
       </Button>
     </div>
   );

@@ -6,31 +6,23 @@ import HivePathlogo from "@/public/assets/aboutme/hivepath-logo.png";
 import CalpadLogo from "@/public/assets/aboutme/calpad-logo.png";
 import ZelloLogo from "@/public/assets/aboutme/zello-logo.png";
 import NvipaniTechnology from "@/public/assets/aboutme/nvipani-technology-logo.png";
+import styler from "@/public/assets/aboutme/styler.png";
+import crafterLogo from "@/public/assets/aboutme/crafter-logo.png";
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 
-export default function ExperienceComponent({
-  pageType,
-}: {
-  pageType: string;
-}) {
+export default function ExperienceComponent({}) {
   return (
     <div className="my-8 border-t border-black">
       <h2 className="my-12 text-3xl font-medium font-display">Experience</h2>
       {data.map((item, index) => {
-        return <ExperienceCard data={item} key={index} pageType={pageType} />;
+        return <ExperienceCard data={item} key={index} />;
       })}
     </div>
   );
 }
 
-const ExperienceCard = ({
-  data,
-  pageType,
-}: {
-  data: ExperienceCardProps;
-  pageType: string;
-}) => {
+const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
   const {
     companyLogo,
     companyName,
@@ -50,7 +42,7 @@ const ExperienceCard = ({
       <div className="col-span-1">
         <Image src={companyLogo} alt={"logo"} width={60} height={60} />
       </div>
-      <div className="col-span-11">
+      <div className="col-span-11 ml-[-40px]">
         <div className="flex items-center justify-between">
           <h3 className="text-2xl font-medium font-display">{companyName}</h3>
           <span className="text-lg font-regular ">{timePeriod}</span>
@@ -104,8 +96,12 @@ const ExperienceCard = ({
                 return (
                   <div
                     key={index}
-                    className="my-1 cursor-pointer mr-6 p-2 border-2 border-gray-300 border-solid rounded-[10px]"
+                    className="my-1 cursor-pointer mr-6 p-2 border-2 border-gray-300 hover:shadow-[0_15px_30px_-6px_rgba(0,0,0,0.3)] hover:transition ease-in-out duration-150 hover:border-white border-solid rounded-[5px]"
+                    style={{
+                      borderLeft: `5px solid #3F69F0`,
+                    }}
                     onClick={() => router.push(`/products/${item.link}`)}
+                   
                   >
                     <div className="flex items-center gap-3 p-3">
                       <div>
@@ -133,7 +129,7 @@ const ExperienceCard = ({
           <div className="my-4">
             {responsibilities.map((item, index) => {
               return (
-                <div key={index} className="flex my-1 leading-10">
+                <div key={index} className="flex my-1 pb-3 ">
                   <svg
                     width="18"
                     height="18"
@@ -228,7 +224,7 @@ const data: ExperienceCardProps[] = [
         description: "E-commerce SaaS for streamlined product life cycle",
       },
       {
-        logo: "",
+        logo: styler,
         title: "Styler",
         link: "styler",
         description: "E-commerce SaaS for streamlined product life cycle",
@@ -250,7 +246,7 @@ const data: ExperienceCardProps[] = [
     ],
   },
   {
-    companyLogo: NvipaniTechnology,
+    companyLogo: crafterLogo,
     companyName: "Crafter",
     jobRole: "Front-End Intern",
     location: "Bangalore, India",

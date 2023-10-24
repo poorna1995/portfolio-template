@@ -26,6 +26,7 @@ export default function DetailsPageTemplate({
   return (
     <div>
       <DetailsPageHeroComponent
+        buttonTitle={pageInfo?.buttonTitle}
         title={pageInfo?.title}
         description={pageInfo?.description}
         image={pageInfo?.image as StaticImageData}
@@ -42,6 +43,7 @@ export default function DetailsPageTemplate({
         <IntroductionComponent
           title={pageInfo?.detailsPageData?.introData?.title}
           content={pageInfo?.detailsPageData?.introData?.content}
+          buttonTitle={pageInfo?.buttonTitle}
           linkForWhitepaperDownload={pageInfo?.linkForWhitepaperDownload}
         />
         {hasContributionData && (
