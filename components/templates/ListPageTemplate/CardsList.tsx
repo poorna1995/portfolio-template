@@ -37,7 +37,7 @@ export default function CardsList({
 
   return (
     <div className="py-8">
-      <div className="max-w-[1600px] mx-auto my-8 flex justify-between items-center sticky top-0 z-50 bg-white">
+      <div className="sticky top-0 z-50 flex items-center justify-between max-w-full mx-auto my-8 bg-white">
         <div className="max-w-[1440px] mx-auto flex">
           {Array.isArray(data) &&
             data.map((item) => {
