@@ -8,8 +8,8 @@ export default function HomePageHeroComponent() {
       {/* <div className="col-span-4">
         <Image src={image} alt="my image" width={600} height={600} />
       </div> */}
-      <div className="col-span-8 p-24">
-        <h1 className="text-6xl font-medium leading-21 font-display">
+      <div className="col-span-8 ml-[-100px] p-24">
+        <h1 className="text-6xl  font-medium leading-21 font-display">
           I create unique solutions that improve people&apos;s lives.
         </h1>
         <p className="mt-4 text-lg font-normal">

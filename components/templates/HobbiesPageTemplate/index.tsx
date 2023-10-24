@@ -63,27 +63,27 @@ const ImageCardData = ({ data }: { data: ImageCardDataProps }) => {
             <Image
               src={HobbieImages}
               alt={"logo"}
-              className=" cursor-pointer max-h-[500px] max-w-[400px]"
+              className=" cursor-pointer max-h-[600px] max-w-[400px] hover:shadow-[0_15px_30px_-6px_rgba(0,0,0,0.3)] hover:transition ease-in-out duration-150"
             />
           </SheetTrigger>
           <SheetContent
             side={side}
-            className="flex mx-auto h-[500px] rounded-2xl"
+            className="flex mx-auto h-[900px] rounded-2xl"
           >
             {/* <SheetHeader>
             </SheetHeader> */}
-            <div className="flex items-center gap-5 mx-auto">
+            <div className="flex items-center gap-5 mt-[500px] mb-[500px] mx-auto">
               <Image
                 src={HobbieImages}
                 alt={"logo"}
-                className="pb-2 cursor-pointer max-h-[400px] max-w-[300px]"
+                className="pb-2 cursor-pointer max-h-[700px] max-w-[500px]"
               />
               <div>
                 {" "}
-                <h1 className="mb-2 text-2xl font-medium text-l">
+                <h1 className="mb-2 text-5xl font-medium font-display text-l">
                   {data.imageHeader}
                 </h1>
-                <p className="max-w-[400px] text-base	font-normal">
+                <p className="max-w-[500px]	mt-6 text-[21px] font-normal">
                   {data.imageDescription}
                 </p>
               </div>

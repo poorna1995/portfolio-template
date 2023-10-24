@@ -17,7 +17,7 @@ export default function OtherItemsCard({
   };
   return (
     <div
-      className="py-10 px-8 border border-[rgba(0, 0, 0, 0.40)] rounded-md"
+      className="py-10 px-8 border border-[rgba(0, 0, 0, 0.40)] hover:shadow-[0_15px_30px_-6px_rgba(0,0,0,0.3)] hover:transition ease-in-out duration-150 hover:border-white rounded-md"
       style={{
         borderTop: `6px solid ${data.countTextColor}`,
       }}
