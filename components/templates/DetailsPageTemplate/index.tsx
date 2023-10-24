@@ -42,6 +42,7 @@ export default function DetailsPageTemplate({
         <IntroductionComponent
           title={pageInfo?.detailsPageData?.introData?.title}
           content={pageInfo?.detailsPageData?.introData?.content}
+          linkForWhitepaperDownload={pageInfo?.linkForWhitepaperDownload}
         />
         {hasContributionData && (
           <Contribution
