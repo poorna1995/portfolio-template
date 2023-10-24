@@ -115,35 +115,35 @@ const whitepapersPageData: {
         align: "center",
       },
     },
-    {
-      title: "Transformers Architecture",
-      description:
-        "Detailed product research on Pre-qualifying a subcontractor and assessing risk",
-      backgroundColor: "#0856B2",
-      count: 5,
-      countTextColor: "#123578",
-      image: transformation,
-      // detailPageVideo:
-      //   "https://drive.google.com/file/d/1EI940qBOJIIBnYF-xe21fRTU9MoaTSYT/preview",      video not available
-      linkForWhitepaperDownload:
-        "https://drive.google.com/file/d/1EEeuxqvCbAIR2UpQhXWoCFbVNLVQLWH3",
-      link: "transformers-architecture",
-      website: "",
-      linkTitle: "Transformers Architecture",
-      timeline: "",
-      detailsPageData: transformerData,
-      imageStyles: {
-        maxHeight: "600px",
-        maxWidth: "600px",
-        fitObject: "fill",
-        align: "center",
-      },
-    },
+    // {
+    //   title: "Transformers Architecture",
+    //   description:
+    //     "Detailed product research on Pre-qualifying a subcontractor and assessing risk",
+    //   backgroundColor: "#0856B2",
+    //   count: 5,
+    //   countTextColor: "#123578",
+    //   image: transformation,
+    //   // detailPageVideo:
+    //   //   "https://drive.google.com/file/d/1EI940qBOJIIBnYF-xe21fRTU9MoaTSYT/preview",      video not available
+    //   linkForWhitepaperDownload:
+    //     "https://drive.google.com/file/d/1EEeuxqvCbAIR2UpQhXWoCFbVNLVQLWH3",
+    //   link: "transformers-architecture",
+    //   website: "",
+    //   linkTitle: "Transformers Architecture",
+    //   timeline: "",
+    //   detailsPageData: transformerData,
+    //   imageStyles: {
+    //     maxHeight: "600px",
+    //     maxWidth: "600px",
+    //     fitObject: "fill",
+    //     align: "center",
+    //   },
+    // },
     {
       title: "Data Tech Stack ",
       description: "Data infrastructure architecture designs",
       backgroundColor: "#CD9047",
-      count: 6,
+      count: 5,
       countTextColor: "#CD9047",
       image: dataTech,
       detailPageVideo:

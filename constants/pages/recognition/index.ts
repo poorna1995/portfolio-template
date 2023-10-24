@@ -15,20 +15,20 @@ const recognitionData: {
   heroDescription: string;
   listData: Array<RecognitionCardProps>;
 } = {
-  heroTitle: "My Research Work",
+  heroTitle: "My Recoginition",
   heroDescription:
-    "Ventured into multiple areas of AI through a series of intriguing research projects.",
+    " ",
   listData: [
     {
       title: "Best Employee Award",
-      description: "Emplyee Awards",
+      description: "Employee Awards",
       buttonTitle: "Download Certificate",
       backgroundColor: "#6C60BA",
       count: 1,
       countTextColor: "#6C60BA",
       image: bestEmployeeAward,
       linkForWhitepaperDownload:
-        "https://drive.google.com/file/d/1goekxXnbvnYgwXan2g4oXhqju4eleipA",
+        "https://drive.google.com/file/d/1mQZPsRfYwxZuBhLlQOPZiBOxIsanj1Oy",
       link: "best-employee-award",
       website: "",
       linkTitle: "",
@@ -39,8 +39,10 @@ const recognitionData: {
       title: "Worldquant",
       description: "Quantitative Research Summer Training Program",
       buttonTitle: "Download Certificate",
+      linkForWhitepaperDownload:
+        "https://drive.google.com/file/d/1cIcgq0y1v7wdjuQj6qf5l8vOWevLV8ML",
       backgroundColor: "#6C60BA",
-      count: 1,
+      count: 2,
       countTextColor: "#6C60BA",
       image: worldQuantImage,
       link: "worldquant",
