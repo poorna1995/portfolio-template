@@ -1,6 +1,6 @@
 const worldquantData = {
   introData: {
-    title: `I'm honored to receive the "Certificate of Accomplishment," and I wanted to share a few key reasons behind this recognition:`,
+    title: `A record of consistently achieving top-tier results, contributing to the success and reputation of WorldQuant's quantitative research.`,
     buttonTitle: "Visit Website",
     content: [
       {
@@ -42,22 +42,23 @@ const worldquantData = {
   keyLearningData: {
     content: [
       {
-        paragraph: `I've consistently gone the extra mile, ensuring deadlines are met and high-quality work is delivered.`,
+        paragraph: `I consistently surpass expectations, ensuring timely delivery and the highest quality work.`,
         list: {
           type: "unordered",
           data: [
             {
-              title: `Adherence to Company Values and Core Beliefs`,
+              title: `Actively collaborated with cross-functional teams to deliver innovative solutions to clients, enhancing company
+reputation`,
             },
             {
-              title: `Robust Dedication to Work and a Collaborative Spirit`,
+              title: `Earned industry-specific certifications, expanding knowledge and expertise`,
             },
             {
-              title: `Profound Proficiency in Coding and Astute Problem-Solving Aptitude`,
+              title: `Completed advanced certifications in Agile methodologies, contributing to enhanced project management`,
             },
-            {
-              title: `Role as an Astute Problem Solver and Effective Team Leader`,
-            },
+            // {
+            //   title: `Role as an Astute Problem Solver and Effective Team Leader`,
+            // },
           ],
         },
       },
