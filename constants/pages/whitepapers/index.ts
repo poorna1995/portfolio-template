@@ -148,7 +148,7 @@ const whitepapersPageData: {
       title: "Data Tech Stack ",
       description: "Data infrastructure architecture designs",
       backgroundColor: "#CD9047",
-      count: 6,
+      count: 5,
       countTextColor: "#CD9047",
       countBackgroundColor: "",
       image: dataTech,
