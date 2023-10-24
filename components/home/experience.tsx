@@ -1,3 +1,4 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import bluecomLogo from "@/public/assets/aboutme/bluecom-logo.png";
@@ -5,19 +6,31 @@ import HivePathlogo from "@/public/assets/aboutme/hivepath-logo.png";
 import CalpadLogo from "@/public/assets/aboutme/calpad-logo.png";
 import ZelloLogo from "@/public/assets/aboutme/zello-logo.png";
 import NvipaniTechnology from "@/public/assets/aboutme/nvipani-technology-logo.png";
+import { useRouter } from "next/navigation";
+import { Button } from "../ui/button";
 
-export default function ExperienceComponent() {
+export default function ExperienceComponent({
+  pageType,
+}: {
+  pageType: string;
+}) {
   return (
     <div className="my-8 border-t border-black">
       <h2 className="my-12 text-3xl font-medium font-display">Experience</h2>
       {data.map((item, index) => {
-        return <ExperienceCard data={item} key={index} />;
+        return <ExperienceCard data={item} key={index} pageType={pageType} />;
       })}
     </div>
   );
 }
 
-const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
+const ExperienceCard = ({
+  data,
+  pageType,
+}: {
+  data: ExperienceCardProps;
+  pageType: string;
+}) => {
   const {
     companyLogo,
     companyName,
@@ -29,6 +42,9 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
     products,
     responsibilities,
   } = data;
+
+  const router = useRouter();
+
   return (
     <div className="grid grid-cols-12 my-8">
       <div className="col-span-1">
@@ -53,7 +69,7 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
                 return (
                   <span
                     key={index}
-                    className="flex items-center gap-3 leading-9 text-lg font-normal"
+                    className="flex items-center gap-3 text-lg font-normal leading-9"
                   >
                     <svg
                       width="18"
@@ -80,7 +96,7 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
         )}{" "}
         {products && products.length > 0 && (
           <div>
-            <h4 className="text-xl mb-4 font-medium">
+            <h4 className="mb-4 text-xl font-medium">
               Key Contributions to Live Products:
             </h4>
             <div className="grid grid-cols-2 gap-4">
@@ -88,7 +104,8 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
                 return (
                   <div
                     key={index}
-                    className="my-1 mr-6 p-2 border-2 border-gray-300 border-solid rounded-[10px]"
+                    className="my-1 cursor-pointer mr-6 p-2 border-2 border-gray-300 border-solid rounded-[10px]"
+                    onClick={() => router.push(`/products/${item.link}`)}
                   >
                     <div className="flex items-center gap-3 p-3">
                       <div>
@@ -116,7 +133,7 @@ const ExperienceCard = ({ data }: { data: ExperienceCardProps }) => {
           <div className="my-4">
             {responsibilities.map((item, index) => {
               return (
-                <div key={index} className="flex my-2 leading-10">
+                <div key={index} className="flex my-1 leading-10">
                   <svg
                     width="18"
                     height="18"
@@ -158,11 +175,13 @@ interface ExperienceCardProps {
   location: string;
   timePeriod: string;
   description?: string;
+  // link?: string;
   areaOfContributions?: string[];
   products?: {
     logo: string | StaticImageData;
     title: string;
     description: string;
+    link?: string;
   }[];
   responsibilities?: string[];
 }
@@ -188,25 +207,30 @@ const data: ExperienceCardProps[] = [
         logo: bluecomLogo,
         title: "Bluecom",
         description: "E-commerce SaaS for streamlined product life cycle",
+        link: "bluecom",
       },
       {
         logo: HivePathlogo,
         title: "Hivepath",
         description: "E-commerce SaaS for streamlined product life cycle",
+        link: "hivepath",
       },
       {
         logo: CalpadLogo,
         title: "Calpad",
+        link: "calpad",
         description: "E-commerce SaaS for streamlined product life cycle",
       },
       {
         logo: ZelloLogo,
         title: "Zello",
+        link: "zello",
         description: "E-commerce SaaS for streamlined product life cycle",
       },
       {
         logo: "",
         title: "Styler",
+        link: "styler",
         description: "E-commerce SaaS for streamlined product life cycle",
       },
     ],

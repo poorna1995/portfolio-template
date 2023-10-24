@@ -20,7 +20,7 @@ export default function Home() {
           <Skills />
         </div>
       </div>
-      <ExperienceComponent />
+      <ExperienceComponent pageType={""} />
     </main>
   );
 }
