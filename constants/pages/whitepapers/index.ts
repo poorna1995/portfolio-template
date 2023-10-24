@@ -28,6 +28,7 @@ const whitepapersPageData: {
       backgroundColor: "#3F69FE",
       count: 1,
       countTextColor: "#3F69FE",
+      countBackgroundColor: "#FBFBFB",
       image: aiCompute,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803298/video/whitepaper%20videos/nhti3thqwtcz4hatgibw.mp4",
@@ -52,6 +53,7 @@ const whitepapersPageData: {
       backgroundColor: "#6C60BA",
       count: 2,
       countTextColor: "#CC4B44",
+      countBackgroundColor: "",
       image: dataLoss,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803508/video/whitepaper%20videos/ow9vbob5b5xbthirl0pz.mp4",
@@ -75,6 +77,7 @@ const whitepapersPageData: {
       backgroundColor: "#945980",
       count: 3,
       countTextColor: "#945980",
+      countBackgroundColor: "#FBFBFB",
       image: multiChannel,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803541/video/whitepaper%20videos/mfulvfqemmcbjfcj2ndu.mp4",
@@ -98,6 +101,7 @@ const whitepapersPageData: {
       backgroundColor: "#591192",
       count: 4,
       countTextColor: "#591192",
+      countBackgroundColor: "",
       image: messagingApp,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803724/video/whitepaper%20videos/aw1yliosekvyfxpwrpxq.mov",
@@ -122,6 +126,7 @@ const whitepapersPageData: {
       backgroundColor: "#0856B2",
       count: 5,
       countTextColor: "#123578",
+      countBackgroundColor: "#FBFBFB",
       image: transformation,
       // detailPageVideo:
       //   "https://drive.google.com/file/d/1EI940qBOJIIBnYF-xe21fRTU9MoaTSYT/preview",      video not available
@@ -145,6 +150,7 @@ const whitepapersPageData: {
       backgroundColor: "#CD9047",
       count: 6,
       countTextColor: "#CD9047",
+      countBackgroundColor: "",
       image: dataTech,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803900/video/whitepaper%20videos/zvaourh3gv76ve1tzwf0.mov",

@@ -2,6 +2,10 @@ import zelloImage1 from "@/public/assets/products/zello-media-image-1.png";
 import zelloImage2 from "@/public/assets/products/zello-media-image-2.png";
 import zelloImage3 from "@/public/assets/products/zello-media-image-3.png";
 import zelloImage4 from "@/public/assets/products/zello-media-image-4.png";
+import zelloImage5 from "@/public/assets/products/zello-image-5.png";
+import zelloImage6 from "@/public/assets/products/zello-image-6.png";
+import zelloImage7 from "@/public/assets/products/zello-image-7.png";
+import zelloImage8 from "@/public/assets/products/zello-image-8.png";
 
 const zelloData = {
   introData: {
@@ -79,6 +83,18 @@ const zelloData = {
   },
   productMedia: {
     image: [
+      {
+        src: zelloImage5,
+      },
+      {
+        src: zelloImage6,
+      },
+      {
+        src: zelloImage7,
+      },
+      {
+        src: zelloImage8,
+      },
       {
         src: zelloImage1,
       },

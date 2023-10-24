@@ -3,6 +3,7 @@ import bluecomImage2 from "@/public/assets/products/bluecom-image-2.png";
 import bluecomImage3 from "@/public/assets/products/bluecom-image-3.png";
 import bluecomImage4 from "@/public/assets/products/bluecom-image-4.png";
 import bluecomImage5 from "@/public/assets/products/bluecom-image-5.png";
+import bluecomImage6 from "@/public/assets/products/bluecom-image-6.png";
 
 const bluecomData = {
   introData: {
@@ -75,6 +76,9 @@ const bluecomData = {
   },
   productMedia: {
     image: [
+      {
+        src: bluecomImage6,
+      },
       {
         src: bluecomImage1,
       },

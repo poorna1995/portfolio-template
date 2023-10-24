@@ -30,6 +30,7 @@ const researchData: {
       backgroundColor: "#6C60BA",
       count: 1,
       countTextColor: "#6C60BA",
+      countBackgroundColor: "#FBFBFB",
       image: computerVisionImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804061/video/Research%20videos/idrb8oxm4wuy6dodg2gq.mp4",
@@ -55,6 +56,7 @@ const researchData: {
       backgroundColor: "#945980",
       count: 2,
       countTextColor: "#945980",
+      countBackgroundColor: "",
       image: aiInerenceImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804084/video/Research%20videos/bqoptsisifri7jdsbop0.mp4",
@@ -80,6 +82,7 @@ const researchData: {
       backgroundColor: "#BAD060",
       count: 3,
       countTextColor: "#BAD060",
+      countBackgroundColor: "#FBFBFB",
       image: transformersImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804207/video/Research%20videos/fhaia28fe0m5hasymurm.mp4",
@@ -104,6 +107,7 @@ const researchData: {
       backgroundColor: "#79C7FF",
       count: 4,
       countTextColor: "#79C7FF",
+      countBackgroundColor: "",
       image: chatBotImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804242/video/Research%20videos/urdzcs4cecsqhyhjobpo.mp4",
@@ -129,6 +133,7 @@ const researchData: {
       backgroundColor: "#123578",
       count: 5,
       countTextColor: "#123578",
+      countBackgroundColor: "#FBFBFB",
       image: topicModelingImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804356/video/Research%20videos/wfpqyqwgoietajsvqwgl.mp4",
@@ -153,6 +158,7 @@ const researchData: {
       backgroundColor: "#3DAAA4",
       count: 6,
       countTextColor: "#3DAAA4",
+      countBackgroundColor: "",
       image: deepReinforcementImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697804434/video/Research%20videos/qcqnf6qxyufgu1pieq8w.mp4",

@@ -82,6 +82,7 @@ const productsPageData: {
       backgroundColor: "#3F69FE",
       count: 1,
       countTextColor: "#3F69FE",
+      countBackgroundColor: "#FBFBFB",
       image: bluecomImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697805240/video/bluecom.mp4",
@@ -105,6 +106,7 @@ const productsPageData: {
       backgroundColor: "#6C60BA",
       count: 2,
       countTextColor: "#6C60BA",
+      countBackgroundColor: "",
       image: hivepathImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1698136131/video/hivepath.mp4",
@@ -128,6 +130,7 @@ const productsPageData: {
       backgroundColor: "#739459",
       count: 3,
       countTextColor: "#739459",
+      countBackgroundColor: "#FBFBFB",
       image: zelloImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697802880/video/zello.mp4",
@@ -151,6 +154,7 @@ const productsPageData: {
       backgroundColor: "#D0B160",
       count: 4,
       countTextColor: "#D0B160",
+      countBackgroundColor: "",
       image: calpadImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697802949/video/calpad.mp4",
@@ -174,6 +178,7 @@ const productsPageData: {
       backgroundColor: "#123578",
       count: 5,
       countTextColor: "#123578",
+      countBackgroundColor: "#FBFBFB",
       image: bluecomCentralImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1697803043/video/bluecom%20central.mp4",
@@ -198,6 +203,7 @@ const productsPageData: {
       backgroundColor: "#591192",
       count: 6,
       countTextColor: "#591192",
+      countBackgroundColor: "",
       image: stylerImage,
       detailPageVideo:
         "https://res.cloudinary.com/du6wh3et2/video/upload/v1698135915/video/styler.mp4",

@@ -26,6 +26,7 @@ const recognitionData: {
       backgroundColor: "#6C60BA",
       count: 1,
       countTextColor: "#6C60BA",
+      countBackgroundColor: "#FBFBFB",
       image: bestEmployeeAward,
       linkForWhitepaperDownload:
         "https://drive.google.com/drive/u/4/folders/1a3UCxoBMQVyIneotKqiZIf0D9uOBbu0H",
@@ -43,6 +44,7 @@ const recognitionData: {
       backgroundColor: "#6C60BA",
       count: 1,
       countTextColor: "#6C60BA",
+      countBackgroundColor: "",
       image: worldQuantImage,
       linkForWhitepaperDownload:
         "https://drive.google.com/file/d/1cIcgq0y1v7wdjuQj6qf5l8vOWevLV8ML/view",
